@@ -1,62 +1,57 @@
-.project-logo-container {
-  width:48px;
-  height: 48px;
-  overflow: hidden;
-  display:inline-block;
-  border-radius:10px;
+body {
+  background:#C9D0CF;
+  padding: 2%;
+  color: #838D8B; 
 }
-.project-logo {
-  background: url('../images/project-marks.png') no-repeat;
-  background-size: 362px 100px;
-  height:100px;
-  width: 362px;
+h5 {
+  color:#fff;
 }
-table span {
-  display: block;
-  font-weight: bold;
+.container {
+  background:#363A3B;
 }
-.project-logo-container.datacoup  {
+.row {
+  display: flex;
 }
-.project-logo-container.datacoup  .project-logo{
-  background-position: 0px 0px;
+.inner-container {
+  border:1px solid #454D4D;
+  width:30%;
 }
-.project-logo-container.user-capital .project-logo{
-  background-position: -52px -52px;
+.content {
+  padding: 30px;
 }
-.project-logo-container.spectrometer .project-logo {
-  background-position: -105px -52px;
+.inner-container:nth-child(even) {
+  width: 70%;
 }
-.project-logo-container.users-united .project-logo{
-  background-position: -209px -52px;
+#user-sum {
+  text-align: center;
 }
-.project-logo-container.waveforme .project-logo {
-  background-position: -157px -52px;
+.logo {
+  background: url('../images/user-capital-logomark.png') no-repeat;
+  background-size: 67px 40px;
+  height:40px;
+  width: 67px;
 }
-.project-logo-container.alta .project-logo {
-  background-position: -262px 0px;
+#user-sum .logo {
+  margin:0 auto;
 }
-.project-logo-container.prsm .project-logo {
-  background-position: -314px -52px;
+.dot-container {
+  padding: 20px 30px 0;
+  max-height: 60px;
+  height: 60px;
+  border-bottom:1px solid #454D4D;
 }
-#contact input, #contact textarea {
-  display: block;
-  width:100%;
+.dot {
+  background:#454D4D;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  margin:4px 4px;
 }
-.data-copywrite-mark {
-  background: url('../images/data-copywrite-mark.png') no-repeat;
-  background-size: 200px 200px;
-  height:200px;
-  width: 200px;
+.dot.active {
+  background: #9EC7BE;
 }
-.shaka {
-  background: url('../images/shaka.png') no-repeat;
-  background-size: 100px 100px;
-  height:100px;
-  width: 100px;
-  margin-bottom: 100px;
-}
-
-
-
 
 
