@@ -15,9 +15,10 @@ h5 {
 .inner-container {
   border:1px solid #454D4D;
   width:30%;
+  min-width: 330px;
 }
 .content {
-  padding: 30px;
+  padding: 30px 40px 10px;
 }
 .inner-container:nth-child(even) {
   width: 70%;
@@ -32,26 +33,113 @@ h5 {
   width: 67px;
 }
 #user-sum .logo {
-  margin:0 auto;
+  margin:10px auto 12px;
+}
+.table-container {
+  max-height: 72px;
+  height: 72px;
+  border-bottom:1px solid #454D4D;
+  overflow: hidden;
+}
+#user-profile .table-container {
+  padding:0px;
 }
 .dot-container {
-  padding: 20px 30px 0;
-  max-height: 60px;
-  height: 60px;
-  border-bottom:1px solid #454D4D;
+  width: 300px;
+  margin: 26px auto;
 }
 .dot {
-  background:#454D4D;
   display: inline-block;
   float: left;
-  vertical-align: top;
-  height: 11px;
-  width: 11px;
-  border-radius: 50%;
-  margin:4px 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 9px 4px;
+  border-color: transparent transparent #454D4D transparent;
+  margin:0px 0px 3px;
+}
+.dot:nth-child(even) {
+  transform: rotate(180deg);
 }
 .dot.active {
-  background: #9EC7BE;
+  border-color: transparent transparent #9EC7BE transparent;
 }
-
-
+.table-container i {
+  font-size: 26px;
+  color: #454D4D;
+}
+.table-container.active i {
+  color: #fff;
+}
+#user-sales .table-container {
+   display: flex;
+}
+#user-sales .table-container section:nth-child(2){
+  flex-grow:8;
+}
+#user-sales button {
+  border-color:#EEC050;
+  color:#fff;
+}
+.stat-container {
+  height: 40px;
+  width: 40px;
+  border:2px solid #454D4D;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#user-intro section {
+  display: inline-block;
+  margin: 2px 50px 0 0;
+  text-align: center;
+  position:relative;
+  line-height: 40px;
+}
+#user-intro .stat-container i {
+  color:#454D4D;
+  font-size: 30px;
+  line-height: 50px;
+}
+#user-intro section p {
+  position: absolute;
+  top: 0;
+  color: #EEC050;
+  font-size: 22px;
+}
+.element-count-icon {
+  background: url('../images/element-icon.png') no-repeat;
+  background-size: 44px 40px;
+  height:40px;
+  width: 44px;
+  display: inline-block;
+  float: left;
+}
+.source-count-icon {
+  background: url('../images/source-icon.png') no-repeat;
+  background-size: 35px 40px;
+  height:40px;
+  width: 35px;
+  display: inline-block;
+  float: left;
+}
+.spectrum-count-icon {
+  background: url('../images/spectrum-icon.png') no-repeat;
+  background-size: 43px 40px;
+  height:40px;
+  width: 43px;
+  display: inline-block;
+  float: left;
+}
+.count-icon h5 {
+  text-align: center;
+  color: #9EC7BE;
+  line-height: 40px;
+}
+#user-intro .stat-box span {
+  display: inline-block;
+  text-align: left;
+  line-height: 14px;
+  font-size: 12px;
+  padding:5px 0 0 14px;
+  text-transform:uppercase;
+}
