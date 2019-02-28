@@ -17,6 +17,9 @@ h5 {
   width:30%;
   min-width: 330px;
 }
+#user-sum.inner-container {
+  padding:30px 0 24px;
+}
 .content {
   padding: 30px 40px 10px;
 }
@@ -33,7 +36,7 @@ h5 {
   width: 67px;
 }
 #user-sum .logo {
-  margin:10px auto 12px;
+  margin:0px auto 14px;
 }
 .table-container {
   max-height: 72px;
@@ -54,7 +57,7 @@ h5 {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 4px 9px 4px;
+  border-width: 0 4px 8px 4px;
   border-color: transparent transparent #454D4D transparent;
   margin:0px 0px 3px;
 }
@@ -73,6 +76,16 @@ h5 {
 }
 #user-sales .table-container {
    display: flex;
+   padding:0 40px;
+}
+#user-sales .table-container section {
+  padding:20px 20px 20px 0;
+}
+#user-sales .table-container span {
+  text-transform: uppercase;
+  color:#fff;
+  line-height: 16px;
+  vertical-align: top;
 }
 #user-sales .table-container section:nth-child(2){
   flex-grow:8;
@@ -80,6 +93,10 @@ h5 {
 #user-sales button {
   border-color:#EEC050;
   color:#fff;
+}
+.stat-box {
+  display:inline-block;
+  margin:4px 20px;
 }
 .stat-container {
   height: 40px;
@@ -90,49 +107,41 @@ h5 {
 }
 #user-intro section {
   display: inline-block;
-  margin: 2px 50px 0 0;
+  margin: 0px 50px 0 0;
   text-align: center;
   position:relative;
   line-height: 40px;
+  vertical-align: top;
 }
 #user-intro .stat-container i {
   color:#454D4D;
   font-size: 30px;
   line-height: 50px;
 }
-#user-intro section p {
-  position: absolute;
-  top: 0;
-  color: #EEC050;
-  font-size: 22px;
+.count-icon {
+  margin: 0 auto;
 }
 .element-count-icon {
   background: url('../images/element-icon.png') no-repeat;
   background-size: 44px 40px;
   height:40px;
   width: 44px;
-  display: inline-block;
-  float: left;
 }
 .source-count-icon {
   background: url('../images/source-icon.png') no-repeat;
   background-size: 35px 40px;
   height:40px;
   width: 35px;
-  display: inline-block;
-  float: left;
 }
 .spectrum-count-icon {
   background: url('../images/spectrum-icon.png') no-repeat;
   background-size: 43px 40px;
   height:40px;
   width: 43px;
-  display: inline-block;
-  float: left;
 }
 .count-icon h5 {
   text-align: center;
-  color: #9EC7BE;
+  color: #fff;
   line-height: 40px;
 }
 #user-intro .stat-box span {
@@ -142,4 +151,50 @@ h5 {
   font-size: 12px;
   padding:5px 0 0 14px;
   text-transform:uppercase;
+}
+#user-intro h5 {
+  margin-bottom: 10px;
+}
+#user-intro .content {
+  padding: 40px 200px 0 40px;
+}
+.category-icon {
+  background: url('../images/category-icons.png') no-repeat;
+  background-size: 218px 30px;
+  height:30px;
+  width: 30px;
+  display: inline-block;
+}
+.inactive .category-icon {
+  opacity: .2;
+}
+.category-icon.spending-icon {
+  background-position: 0 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.social-icon {
+  background-position: -36px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.search-icon {
+  background-position: -76px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.health-icon {
+  background-position: -114px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.travel-icon {
+  background-position: -76px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.device-icon {
+  background-position: -154px 0;
+  height:30px;
+  width: 36px;
 }
