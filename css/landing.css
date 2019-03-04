@@ -22,6 +22,8 @@ p{	font-family: 'Roboto', sans-serif;
 	color: #C9D0CF;
 	font-family: 'Roboto', sans-serif;
 	vertical-align: top;
+	font-weight: 100;
+	letter-spacing: 1px;
 }
 .hero h1 {
 	color: #fff;
@@ -41,8 +43,8 @@ p{	font-family: 'Roboto', sans-serif;
 }
 .alt-logo {
   background: url('../images/user-capital-logo-big.png') no-repeat;
-  background-size: 70px 118px;
-  height:118px;
+  background-size: 70px 43px;
+  height:43px;
   width: 70px;
   display:block;
   margin:30px auto 0;
