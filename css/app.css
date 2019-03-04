@@ -1,10 +1,7 @@
 body {
-  background:#C9D0CF;
+  background:#FFF;
   padding: 2%;
   color: #838D8B; 
-}
-h5 {
-  color:#fff;
 }
 .container {
   background:#363A3B;
@@ -90,9 +87,16 @@ h5 {
 #user-sales .table-container section:nth-child(2){
   flex-grow:8;
 }
-#user-sales button {
+button {
   border-color:#EEC050;
   color:#fff;
+}
+button.primary-btn {
+  border-color:#9EC7BE;
+  color:#fff;
+}
+button.secondary-btn {
+  border-color:#454D4D;
 }
 .stat-box {
   display:inline-block;
