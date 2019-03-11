@@ -18,7 +18,7 @@ p{	font-family: 'Roboto', sans-serif;
 	color: #fff;
 }
 .main-menu .active span i {
-  color:#2AD0FA;
+  color:#40B8BB;
 }
 .main-menu span {
 	line-height: 18px;
@@ -109,7 +109,7 @@ p{	font-family: 'Roboto', sans-serif;
 .grid-base div {
 	height: 150px;
   width: 150px;
-  border:1px solid #2AD0FA;
+  border:1px solid #40B8BB;
   text-align: center;
 }
 .grid-base div:nth-child(even) { 
