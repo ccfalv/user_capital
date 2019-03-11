@@ -1,8 +1,8 @@
 .hero.container {
-	height: 600px;
+	height: 700px;
 	position: relative;
 	overflow: hidden;
-	background:#363A3B;
+	background:#323738;
 }
 .container {
 	padding: 40px 50px;
@@ -17,6 +17,9 @@ p{	font-family: 'Roboto', sans-serif;
 .main-menu .active span {
 	color: #fff;
 }
+.main-menu .active span i {
+  color:#EEC050;
+}
 .main-menu span {
 	line-height: 18px;
 	color: #C9D0CF;
@@ -25,8 +28,21 @@ p{	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	letter-spacing: 1px;
 }
+.main-menu span i {
+  font-size: 8px;
+  line-height: 18px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.main-menu .columns:last-child i {
+  transform: rotate(-90deg);
+  margin:0 4px 0 0;
+}
 .hero h1 {
 	color: #fff;
+  text-align: center;
+  margin: 80px 0 40px;
+  line-height: 70px
 }
 .hero p {
 	color:#C9D0CF;
@@ -36,9 +52,9 @@ p{	font-family: 'Roboto', sans-serif;
 }
 .logo-container .logo {
   background: url('../images/user-capital-logo.png') no-repeat;
-  background-size: 190px 34px;
-  height:34px;
-  width: 188px;
+  background-size: 152px 30px;
+  height:30px;
+  width: 152px;
   display: inline-block;
 }
 .alt-logo {
@@ -60,24 +76,58 @@ p{	font-family: 'Roboto', sans-serif;
 	color: #C9D0CF;
 }
 .hero-content {
-	padding-top:100px;
+	padding-top:0px;
+  display: block;
+  overflow: hidden;
+  text-align: center;
 }
 .hero-content button {
-	margin-right: 20px;
+	margin:0 10px;
 }
-.capital-grid .column {
-	height: 200px;
+
+.grid-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  right: 321px;
+  top: 600px;
+  width: 1740px;
+  height: 77px;
+  transform: rotateX(74deg) rotateY(0deg) rotateZ(-45deg);
+  -webkit-perspective: 100px;
+  transform-style: preserve-3d;
+}
+.pawn {
+  background: url('../images/pawn.png') no-repeat;
+  background-size:140px 173px;
+  height:173px;
+  position: relative;
+  width: 140px;
+  margin:80px auto;
+}
+.grid-base div {
+	height: 150px;
+  width: 150px;
+  border:1px solid #2AD0FA;
+  text-align: center;
+}
+.grid-base div:nth-child(even) { 
+}
+.capital-grid i {
+  font-size: 80px;
+  line-height: 140px;
+  color:#C9D0CF;
+  text-shadow:-3px 2px 0px #2AD0FA;
+
+}
+.capital-grid {
 }
 .capital-grid .column:nth-child(1) {
 	border:1px solid #EEC050;
 }
 .capital-grid .column:nth-child(2) {
 	border:1px solid #9EC7BE;
-}
-.capital-grid {
-	top: 140px;
-	position: absolute;
-	right: 100px;
 }
 .pillar .user-orbit {
   z-index: 2;
@@ -346,13 +396,13 @@ p{	font-family: 'Roboto', sans-serif;
   transform:rotate(-30deg);
 }
 .container.mission {
-	height: 600px;
-	background:rgba(158, 199,190,1);
+	height: auto;
+	background:#fff;
 	margin:30px 0;
 }
 .container.how-it-works {
-	height: 600px;
-	background:#C9D0CF;
+	height: 1200px;
+	background:#e7e9e9;
 	margin:30px 0;
 	text-align: center;
 }
