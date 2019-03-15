@@ -1,0 +1,243 @@
+.hero.container {
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	background:#323738;
+}
+.sticky-header .sticky-inner {
+  background:#eaeded;
+  padding: 10px 20px;
+}
+.data-category-shields {
+  background: url('../images/data-category-shields.png') no-repeat;
+  background-size: 106px 20px;
+  height:20px;
+  width: 106px;
+  display: inline-block;
+}
+.status-menu a {
+  color:#323738;
+  font-size: 14px;
+  padding-left: 4px;
+}
+.status-menu a i {
+  color:#C9D0D0;
+  font-size: 10px;
+}
+.container {
+	padding: 40px 50px;
+}
+h5,h2, h1 {
+	font-family: 'Crete Round', serif;
+}
+h3,h4 {
+  font-family: 'Roboto', sans-serif;
+}
+p {	
+  font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color:rgba(54, 58, 59, 1);
+}
+.main-menu .active span {
+	color: #fff;
+}
+.main-menu .active span i {
+  color:#EEC050;
+}
+.main-menu span:hover {
+  color: #fff;
+}
+.main-menu span:hover i {
+  color:#EEC050;
+}
+.main-menu span {
+	line-height: 18px;
+	color: #C9D0D0;
+	font-family: 'Roboto', sans-serif;
+	vertical-align: top;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+.main-menu span i {
+  font-size: 8px;
+  line-height: 18px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.main-menu .columns:last-child i {
+  transform: rotate(-90deg);
+  margin:0 4px 0 0;
+}
+h1 {
+	color: #fff;
+  margin: 80px 0 30px;
+  line-height: 60px
+}
+.hero p {
+	color:#C9D0CF;
+}
+.mission h1,  .get-started h1 {
+	color:#323738;
+}
+.logo-container .logo {
+  background: url('../images/user-capital-logo.png') no-repeat;
+  background-size: 152px 30px;
+  height:30px;
+  width: 152px;
+  display: inline-block;
+}
+.alt-logo {
+  background: url('../images/user-capital-logo-big.png') no-repeat;
+  background-size: 70px 43px;
+  height:43px;
+  width: 70px;
+  display:block;
+  margin:30px auto 0;
+}
+.logo-container span {
+	display: inline-block;
+	line-height: 20px;
+	letter-spacing: 3px;
+	vertical-align: top;
+	font-size: 16px;
+	margin:0px 0 0 10px;
+	font-weight: 800;
+	color: #C9D0CF;
+}
+.hero-content {
+	padding-top:0px;
+  display: block;
+  overflow: hidden;
+}
+.hero-content button {
+	margin:30px 10px 0 0;
+}
+
+.grid-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  right: -465px;
+  top: 344px;
+  width: 1740px;
+  height: 77px;
+  transform: rotateX(70deg) rotateY(0deg) rotateZ(-50deg);
+  -webkit-perspective: 100px;
+  transform-style: preserve-3d;
+}
+.pawn {
+  background: url('../images/pawn.png') no-repeat;
+  background-size:100px 123px;
+  height:123px;
+  position: relative;
+  width: 100px;
+  margin:80px auto;
+  display: none;
+}
+.grid-base div {
+	height: 190px;
+  width: 190px;
+  border:1px solid rgba(201, 208, 207, .3);
+  text-align: center;
+}
+.grid-base div:nth-child(even) { 
+}
+.capital-grid i {
+  font-size: 80px;
+  line-height: 140px;
+  color:#9EC7BF;
+}
+.capital-grid {
+}
+.capital-grid .column:nth-child(1) {
+	h1
+  rder:1px solid #EEC050;
+}
+.capital-grid .column:nth-child(2) {
+	border:1px solid #9EC7BE;
+}
+.container.mission {
+	height: auto;
+	margin:30px 0;
+}
+.container.demo{
+  padding: 0;
+}
+.container.how-it-works {
+	height: 1200px;
+	margin:30px 0;
+  background:#323738;
+	text-align: center;
+}
+.container.get-started {
+	height: 600px;
+	background:#EEC050;
+	margin:30px 0;
+}
+.container.footer {
+	height: 200px;
+	margin:30px 0;
+  background: #eaeded;
+}
+.section-content {
+	padding:30px 0;
+}
+.mining-container {
+  position: relative;
+}
+.fb-piece {
+  background: url('../images/3d-fb-piece.png') no-repeat;
+  background-size: 68px 132px;
+  height:132px;
+  width: 68px;
+  position: absolute;
+  z-index: 101;
+  left: 1011px;
+  top: 342px;
+}
+.amzn-piece {
+  background: url('../images/3d-amzn-piece.png') no-repeat;
+  background-size: 110px 120px;
+  height:120px;
+  width: 110px;
+  position: absolute;
+  z-index: 101;
+  left: 1093px;
+  top: 187px;
+
+}
+.lnkd-piece {
+  background: url('../images/3d-lnkd-piece.png') no-repeat;
+  background-size: 94px 110px;
+  height:110px;
+  width: 94px;
+  position: absolute;
+  z-index: 101;
+  left: 931px;
+  top: 526px;
+}
+.goog-piece {
+  background: url('../images/3d-goog-piece.png') no-repeat;
+  background-size: 114px 120px;
+  height:120px;
+  width: 114px;
+  position: absolute;
+  z-index: 101;
+  left: 731px;
+  top: 326px;
+}
+.apple-piece {
+  background: url('../images/3d-appl-piece.png') no-repeat;
+  background-size: 101px 130px;
+  height:130px;
+  width: 101px;
+  position: absolute;
+  z-index: 101;
+  left: 431px;
+  top: 426px;
+}
+
+
+
+
