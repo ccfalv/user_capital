@@ -1,10 +1,9 @@
 body {
-  background:#FFF;
-  padding: 2%;
-  color: #838D8B; 
+  background:#eaeded;
+  color: #C9D0D0; 
+  padding: 1%;
 }
 .container {
-  background:#363A3B;
 }
 .row {
   display: flex;
@@ -92,7 +91,7 @@ button {
   color:#fff;
 }
 button.primary-btn {
-  border-color:#33C4FB;
+  border-color:#C9D0D0;
   color:#fff;
 }
 button.secondary-btn {
