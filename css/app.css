@@ -1,7 +1,6 @@
 body {
   background:#eaeded;
-  color: #C9D0D0; 
-  padding: 1%;
+  color: #828686; 
 }
 .container {
 }
@@ -87,12 +86,14 @@ body {
   flex-grow:8;
 }
 button {
-  border-color:#EEC050;
-  color:#fff;
+  border-color:#323738;
+  background:#f4b95e;
+  color:#323738;
 }
 button.primary-btn {
-  border-color:#C9D0D0;
-  color:#fff;
+  border-color:#323738;
+  background: #C9D0D0;
+  color:#323738;
 }
 button.secondary-btn {
   border-color:#454D4D;

@@ -1,8 +1,8 @@
 .hero.container {
-	height: 600px;
+	height: 620px;
 	position: relative;
 	overflow: hidden;
-	background:#323738;
+	background:#eaeded;
 }
 .sticky-header .sticky-inner {
   background:#eaeded;
@@ -39,20 +39,20 @@ p {
 	color:rgba(54, 58, 59, 1);
 }
 .main-menu .active span {
-	color: #fff;
+	color: #323738;
 }
 .main-menu .active span i {
-  color:#EEC050;
+  color:#f4b95e;
 }
 .main-menu span:hover {
-  color: #fff;
+  color: #323738;
 }
 .main-menu span:hover i {
-  color:#EEC050;
+  color:#f4b95e;
 }
 .main-menu span {
 	line-height: 18px;
-	color: #C9D0D0;
+	color: #828686;
 	font-family: 'Roboto', sans-serif;
 	vertical-align: top;
 	font-weight: 100;
@@ -69,7 +69,7 @@ p {
   margin:0 4px 0 0;
 }
 h1 {
-	color: #fff;
+	color: #323738;
   margin: 80px 0 30px;
   line-height: 60px
 }
@@ -118,8 +118,8 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  right: -465px;
-  top: 344px;
+  right: -378px;
+  top: 364px;
   width: 1740px;
   height: 77px;
   transform: rotateX(70deg) rotateY(0deg) rotateZ(-50deg);
@@ -128,17 +128,16 @@ h1 {
 }
 .pawn {
   background: url('../images/pawn.png') no-repeat;
-  background-size:100px 123px;
-  height:123px;
+  background-size:480px 402px;
+  height:402px;
   position: relative;
-  width: 100px;
+  width: 480px;
   margin:80px auto;
-  display: none;
 }
 .grid-base div {
 	height: 190px;
   width: 190px;
-  border:1px solid rgba(201, 208, 207, .3);
+  border:1px solid #C9D0D0;
   text-align: center;
 }
 .grid-base div:nth-child(even) { 
@@ -159,25 +158,26 @@ h1 {
 }
 .container.mission {
 	height: auto;
-	margin:30px 0;
+  background:#fff;
+	margin:00px 0;
 }
 .container.demo{
   padding: 0;
 }
 .container.how-it-works {
 	height: 1200px;
-	margin:30px 0;
+	margin:0px 0;
   background:#323738;
 	text-align: center;
 }
 .container.get-started {
 	height: 600px;
-	background:#EEC050;
-	margin:30px 0;
+	background:#F9B666;
+	margin:0px 0;
 }
 .container.footer {
 	height: 200px;
-	margin:30px 0;
+	margin:0px 0;
   background: #eaeded;
 }
 .section-content {
