@@ -29,9 +29,6 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <script src="js/micromodal.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/tabby.polyfills.min.js"></script>
 
 
   <!-- Favicon
@@ -45,24 +42,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="header">
     <div class="row">
-      <div class="six columns">
+      <div class="two columns">
         <div class="wordmark"><span>User Capital</span></div>
       </div>
-      <div class="two columns active">
-        <a href="index.html"><span class="u-pull-right"><i class="fas fa-circle"></i> For Individuals</span></a>
-      </div>
-      <div class="two columns">
-        <a href="for-companies.html"><span class="u-pull-right"><i class="fas fa-square"></i> For Merchants</span></a>
-      </div>
-      <div class="two columns">
-        <a href="for-investors.html"><span class="u-pull-right"><i class="fas fa-play"></i> For Investors</span></a>
+      <div class="eleven columns address-placeholder">
+        <a href="#">0x123f681646d4a755815f9cb19e1acc8565a0c2ac</a>
       </div>
     </div>
   </div>
   <div class="container app">
     <div id="stat-container"class="row">
       <div id="user-sum" class="three columns">
-        <div class="account-graph">
+        <!--<div class="account-graph">
           <div class="large-token-square">
             <div class="small-token-square-3d search-token-square active left-token-square">
               <figure class="front"></figure>
@@ -160,29 +151,27 @@
             </div>
           </div>
         </div>
+      -->
+      <div id="circle-container"><strong>0</strong></div>
       </div>
       <div id="user-intro" class="ten columns">
         <div class="data-input">
           <section> 
-            <h1>$12</h1>
-            <h5>User Capital Value</h5>
-            <p>Exchange $1.00 per month<a href="#" data-micromodal-trigger="travel-modal">How it works</a></p>
+            <h1>$0.00</h1>
+            <h5><span>user capital value</span></i class="fas fa-question-circle"></i></h5>
+            <div class="interval-tags">
+              <a href="#" class="interval-tag active">12 Months</a>
+              <a href="#" class="interval-tag">24 Months</a>
+              <a href="#" class="interval-tag">36 Months</a>
+            </div>
           </section>
-        </div>
-        <div class="data-output">
-          <div class="bar" style="height: 0px"></div>
-          <div class="bar" style="height: 10px"></div>
-          <div class="bar" style="height: 20px"></div>
-          <div class="bar" style="height: 30px"></div>
-          <div class="bar" style="height: 40px"></div>
-          <div class="bar" style="height: 50px"></div>
-          <div class="bar" style="height: 60px"></div>
-          <div class="bar" style="height: 70px"></div>
-          <div class="bar" style="height: 80px"></div>
-          <div class="bar" style="height: 90px"></div>
-          <div class="bar" style="height: 100px"></div>
-          <div class="bar" style="height: 110px"></div>
-          <div class="bar" style="height: 120px"></div>
+          <section>
+            <div class="data-output">
+              <div class="wrapper">
+                <div id="chart"></div>
+              </div>
+            </div>
+          </section>   
         </div>
       </div>
     </div>
@@ -190,62 +179,41 @@
       <div class="row">
         <div class="three columns account-menu">
           <ul data-tabs>
-            <li><a data-tabby-default href="#spending-data-container">
-             Spending
+            <li><a data-tabby-default href="#spending-data-container">Spending<span>0</span>
             </a></li>
-            <li><a href="#social-data-container">Social</a></li>
-            <li><a href="#search-data-container">Search</a></li>
-            <li><a href="#entertainment-data-container">Entertainment</a></li>
-            <li><a href="#health-data-container">Health</a></li>
-            <li><a href="#location-data-container">Transportation</a></li>
+            <li><a href="#social-data-container">Social<span>0</span></a></li>
+            <li><a href="#search-data-container">Search<span>0</span></a></li>
+            <li><a href="#entertainment-data-container">Entertainment<span>0</span></a></li>
+            <li><a href="#health-data-container">Health<span>0</span></a></li>
+            <li><a href="#location-data-container">Transportation<span>0</span></a></li>
           </ul>
         </div>
         <div id="spending-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d spending-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fa fa-credit-card"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Debit Card</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span>Balances</span>
-              <span>Transaction Amount</span>
-              <span>Transaction type</span>
-              <span>Transaction Date</span>
-              <span>Merchant Name</span>
-              <span>Merchant Type</span>
+              <span><div class="element-icons spending-icon"></div>Balances</span>
+              <span><div class="element-icons spending-icon"></div>Transactions</span>
+              <span><div class="element-icons spending-icon"></div>Categories</span>
+              <span><div class="element-icons spending-icon"></div>Dates</span>
+              <span><div class="element-icons spending-icon"></div>Merchants</span>
+              <span><div class="element-icons spending-icon"></div>Industries</span>
             </section>
-            <button class="primary-btn">Claim this data</button>
+            <button class="primary-btn">Claim this user capital</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d spending-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fa fa-credit-card"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Credit Card</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span>Balances</span>
-              <span>Transaction Amount</span>
-              <span>Transaction type</span>
-              <span>Transaction Date</span>
-              <span>Merchant Name</span>
-              <span>Merchant Type</span>
+              <span><div class="element-icons spending-icon"></div>Balances</span>
+              <span><div class="element-icons spending-icon"></div>Transactions</span>
+              <span><div class="element-icons spending-icon"></div>Categories</span>
+              <span><div class="element-icons spending-icon"></div>Dates</span>
+              <span><div class="element-icons spending-icon"></div>Merchants</span>
+              <span><div class="element-icons spending-icon"></div>Industries</span>
             </section>
-            <button class="primary-btn">Claim this data</button>
+            <button class="primary-btn">Claim this user capital</button>
           </div>
         </div>
         <div id="social-data-container" class="connect-data-container ten columns">
@@ -516,16 +484,17 @@
       </div>
     </div>
   </div>
-  
+  <script src="js/micromodal.min.js"></script>
+  <script src="js/progressbar.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/tabby.polyfills.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="dist/circle-progress.js"></script>
   <script>
   // Initial config for setting up modals
   MicroModal.init({
   });
   //MicroModal.show('travel-modal');
-  </script>
-  <script>
-  var tabs = new Tabby('[data-tabs]');
-</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
