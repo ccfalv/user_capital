@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/tabby-ui-vertical.min.css">
@@ -41,14 +42,38 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="header">
-    <div class="row">
-      <div class="two columns">
-        <div class="wordmark"><span>User Capital</span></div>
+    <div class="wordmark"><span>User Capital</span></div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        </ul>
       </div>
-      <div class="eleven columns address-placeholder">
-        <a href="#">0x123f681646d4a755815f9cb19e1acc8565a0c2ac</a>
-      </div>
-    </div>
+    </nav>
   </div>
   <div class="container app">
     <div id="stat-container"class="row">
@@ -158,7 +183,7 @@
         <div class="data-input">
           <section> 
             <h1>$0.00</h1>
-            <h5><span>user capital value</span></i class="fas fa-question-circle"></i></h5>
+            <h5>User Capital Value <italic>(projected)</italic><i class="fa fa-question-circle"></i></h5>
             <div class="interval-tags">
               <a href="#" class="interval-tag active">12 Months</a>
               <a href="#" class="interval-tag">24 Months</a>
@@ -179,13 +204,13 @@
       <div class="row">
         <div class="three columns account-menu">
           <ul data-tabs>
-            <li><a data-tabby-default href="#spending-data-container">Spending<span>0</span>
+            <li><a data-tabby-default href="#spending-data-container">Spending<span><div class="gem-geo-icons spending-icon"></div></span>
             </a></li>
-            <li><a href="#social-data-container">Social<span>0</span></a></li>
-            <li><a href="#search-data-container">Search<span>0</span></a></li>
-            <li><a href="#entertainment-data-container">Entertainment<span>0</span></a></li>
-            <li><a href="#health-data-container">Health<span>0</span></a></li>
-            <li><a href="#location-data-container">Transportation<span>0</span></a></li>
+            <li><a href="#social-data-container">Social<span><div class="gem-geo-icons social-icon"></div></span></a></li>
+            <li><a href="#search-data-container">Search<span><div class="gem-geo-icons search-icon"></div></span></a></li>
+            <li><a href="#entertainment-data-container">Entertainment<span><div class="gem-geo-icons entertainment-icon"></div></span></a></li>
+            <li><a href="#health-data-container">Health<span><div class="gem-geo-icons health-icon"></div></span></a></li>
+            <li><a href="#location-data-container">Transportation<span><div class="gem-geo-icons transportation-icon"></div></span></a></li>
           </ul>
         </div>
         <div id="spending-data-container" class="connect-data-container ten columns">
@@ -193,92 +218,156 @@
             <h5>Debit Card</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span><div class="element-icons spending-icon"></div>Balances</span>
-              <span><div class="element-icons spending-icon"></div>Transactions</span>
-              <span><div class="element-icons spending-icon"></div>Categories</span>
-              <span><div class="element-icons spending-icon"></div>Dates</span>
-              <span><div class="element-icons spending-icon"></div>Merchants</span>
-              <span><div class="element-icons spending-icon"></div>Industries</span>
+              <label>Elements</label>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Account Balances</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Transactions</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Timestamp</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Merchants</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Industries</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Locations</p>
+                </div>
+              </div>
             </section>
-            <button class="primary-btn">Claim this user capital</button>
+            <button class="primary-btn spending-btn">Claim this data</button>
           </div>
           <div class="account-tile">
-            <h5>Credit Card</h5>
+            <h5>Credit Card<span><i class="far fa-flag"></i></span></h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span><div class="element-icons spending-icon"></div>Balances</span>
-              <span><div class="element-icons spending-icon"></div>Transactions</span>
-              <span><div class="element-icons spending-icon"></div>Categories</span>
-              <span><div class="element-icons spending-icon"></div>Dates</span>
-              <span><div class="element-icons spending-icon"></div>Merchants</span>
-              <span><div class="element-icons spending-icon"></div>Industries</span>
+              <label>Elements</label>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Account Balances</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Transactions</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Timestamp</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Merchants</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Industries</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Locations</p>
+                </div>
+              </div>
             </section>
-            <button class="primary-btn">Claim this user capital</button>
+            <button class="primary-btn spending-btn">Claim this data</button>
           </div>
         </div>
         <div id="social-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d social-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Facebook</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span>Balances</span>
-              <span>Transaction Amount</span>
-              <span>Transaction type</span>
-              <span>Transaction Date</span>
-              <span>Merchant Name</span>
-              <span>Merchant Type</span>
+              <label>Data Elements</label>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Account Balances</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Transactions</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Timestamp</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Merchants</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Industries</p>
+                </div>
+              </div>
+              <div class="element spending-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <p>Locations</p>
+                </div>
+              </div>
             </section>
-            <button class="primary-btn">Claim this data</button>
+            <button class="primary-btn social-btn">Mine this data</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d social-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>LinkedIn</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span>Balances</span>
-              <span>Transaction Amount</span>
-              <span>Transaction type</span>
-              <span>Transaction Date</span>
-              <span>Merchant Name</span>
-              <span>Merchant Type</span>
+              <label></label>
+              <span>Profile</span>
+              <span>Employment</span>
+              <span>Education</span>
+              <span>Connections</span>
+              <span>Searches</span>
             </section>
             <button class="primary-btn">Claim this data</button>
           </div>
         </div>
         <div id="search-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d search-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-chrome"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Chrome</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -289,19 +378,10 @@
             <button class="primary-btn">Claim this data</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d search-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-firefox"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Firefox</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -314,19 +394,10 @@
         </div>
         <div id="entertainment-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d entertainment-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-chrome"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Netflix</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -337,19 +408,10 @@
             <button class="primary-btn">Claim this data</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d entertainment-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-firefox"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
             <h5>Amazon</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -362,20 +424,17 @@
         </div>
         <div id="health-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d health-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-chrome"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
-            <h5>Apple</h5>
+            <h5>Fitbit</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
-              <span>Balances</span>
+              <label></label>
+               <div class="element fitness-element" data-micromodal-trigger="spending-modal">
+                <div class="element-content">
+                  <div class="gem-geo-icons fitness-icon"></div>
+                  <h5>Sp</h5>
+                  <span>Spending</span>
+                </div>
+              </div>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
               <span>Transaction Date</span>
@@ -385,19 +444,10 @@
             <button class="primary-btn">Claim this data</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d health-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-firefox"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
-            <h5>Android</h5>
+            <h5>Strava</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -410,19 +460,10 @@
         </div>
         <div id="location-data-container" class="connect-data-container ten columns">
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d location-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-chrome"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
-            <h5>Fitbit</h5>
+            <h5>Uber</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>
@@ -433,19 +474,10 @@
             <button class="primary-btn">Claim this data</button>
           </div>
           <div class="account-tile">
-            <div class="account-icon-container">
-              <div class="small-token-square-3d location-token-square active">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-firefox"></i></figure>
-              <figure class="bottom"></figure>
-              </div>
-            </div>
-            <h5>Strava</h5>
+            <h5>Lyft</h5>
             <p>You can also use the jsDelivr CDN. I recommend linking to a specific version number or version range to prevent major updates from breaking your site. Tabby uses.</p>
             <section class="elements-container">
+              <label></label>
               <span>Balances</span>
               <span>Transaction Amount</span>
               <span>Transaction type</span>

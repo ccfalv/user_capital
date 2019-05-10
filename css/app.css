@@ -5,6 +5,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 body {
   background:#eaeded;
+  overflow-x: hidden;
 }
 .header {
   background:#fff;
@@ -14,6 +15,10 @@ body {
 h1 {
   font-family: 'Michroma', sans-serif;
   font-size: 32px;
+}
+nav {
+  display: inline-flex;
+  float:right;
 }
 .header a {
   color:#363A3B;
@@ -29,6 +34,7 @@ h1 {
   font-weight: 800;
   font-family: 'Michroma', sans-serif;
   color:#101429;
+  display: inline-flex;
 }
 .address-placeholder {
   padding: 4px 0;
@@ -233,29 +239,25 @@ button.primary-btn {
   display: inline-block;
   font-family: 'Michroma', sans-serif;
 }
-#user-intro .data-output {
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap-reverse;
-  float: left;
-}
 #user-intro .data-input {
   width: 50%;
   display: inline-flex;
   float: left;
   flex-grow: 1;
-  padding:30px 0px 20px 50px;
+  padding:32px 0px 18px 50px;
 }
 .data-input h5 {
   margin-bottom:8px;
   display: inline-block;
   line-height: 24px;
-  color:#FFF;
-}
-.data-input h5 span {
-  font-family: 'Michroma', sans-serif;
   display: block;
   color:rgba(255,255,255,.6);
+  margin: 6px 0 10px;
+}
+.data-input h5  i {
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: 6px;
 }
 #user-intro .bar {
   width: 5.2%;
@@ -288,41 +290,45 @@ button.primary-btn {
 .account-menu {
   background: #eaeded;
 }
-.account-menu a {
-  color:#101429;
+.account-menu ul li a {
+  font-weight: 800;
+  font-family: 'Michroma', sans-serif;
+  color:#838D8B;
+}
+.account-menu span {
+  font-family: 'Inter var', sans-serif;
 }
 .account-menu a span {
   float: right;
 }
-.account-menu a:hover .category-icon.spending-icon, [role=tab][aria-selected=true] .spending-icon {
-  background-position: 0px 0px;
-}
 .category-icon.social-icon {
   background-position: -50px 0;
 }
-.account-menu a:hover .category-icon.social-icon, [role=tab][aria-selected=true] .social-icon  {
-  background-position: -50px -64px;
+.account-menu a:hover .gem-geo-icons.spending-icon, [role=tab][aria-selected=true] .gem-geo-icons.spending-icon  {
+  background-position: 2px -27px;
 }
-.category-icon.search-icon {
-  background-position: -112px 0;
+.account-menu a:hover .gem-geo-icons.social-icon, [role=tab][aria-selected=true] .gem-geo-icons.social-icon {
+  background-position: -20px -27px;
 }
-.account-menu a:hover:hover .category-icon.search-icon, [role=tab][aria-selected=true] .search-icon {
-  background-position: -112px -64px;
+.account-menu a:hover .gem-geo-icons.search-icon, [role=tab][aria-selected=true] .gem-geo-icons.search-icon  {
+  background-position: -45px -27px;
 }
-.category-icon.fitness-icon {
-  background-position: -168px 0;
+.account-menu a:hover .gem-geo-icons.entertainment-icon, [role=tab][aria-selected=true] .gem-geo-icons.entertainment-icon  {
+  background-position: -70px -27px;
 }
-.account-menu a:hover .category-icon.fitness-icon, [role=tab][aria-selected=true] .fitness-icon  {
-  background-position: -168px -64px;
+.account-menu a:hover .gem-geo-icons.health-icon, [role=tab][aria-selected=true] .gem-geo-icons.health-icon  {
+  background-position: -95px -27px;
 }
-.category-icon.location-icon {
-  background-position: -230px 0;
-}
-.account-menu a:hover .category-icon.location-icon, [role=tab][aria-selected=true] .location-icon {
-  background-position: -230px -64px;
+.account-menu a:hover .gem-geo-icons.transportation-icon, [role=tab][aria-selected=true] .gem-geo-icons.transportation-icon  {
+  background-position: -116px -26px;
 }
 .account-menu [role=tab][aria-selected=true] {
   background:#fff;
+  color:#363a4e;
+}
+.account-menu [role=tab]:hover:not([aria-selected=true]) {
+  background: #fff;
+  color:#363a4e;
 }
 .account-menu ul li {
   margin:0;
@@ -355,24 +361,32 @@ button.primary-btn {
   background:#eaeded;
   border-top:1px solid #C9D0CF;
   border-right: 1px solid #C9D0CF;
-  padding: 1.3em 2.2em;
+  padding: 1.25em 2.2em;
 }
 .account-tile {
   border-right:1px solid #C9D0CF;
   flex-grow: 1;
-  overflow: hidden;
-  padding:30px 50px;
+  padding:24px 50px;
+}
+.account-tile:hover { 
+  cursor: pointer;
 }
 .account-tile:last-child {
   border: none;
 }
 .account-tile h5 {
   font-size: 28px;
+  margin-bottom: 14px;
   vertical-align: top;
   font-weight: 700;
   color:#101429;
-  display: inline-block;
+  display: block;
   font-family: 'Michroma', sans-serif;
+}
+.account-tile h5 span {
+  float: right;
+  font-size: 12px;
+  line-height: 32px;
 }
 .account-tile h1 { 
   color:#101429;
@@ -753,54 +767,64 @@ transform: rotateX( -90deg ) translateZ(16px );
 transform: rotateX( -90deg ) translateZ(50px );
 background
 }
-.elements-container span {
-  padding: 2px 4px;
-  margin: 0px 6px 10px 0;
-  display: inline-flex;
-  color:#363A3B;
-  background:#eaeded;
+.account-tile p {
+  margin: 0 0 14px;
 }
-#spending-data-container .elements-container span {
+.gem-geo-icons {
+  background: url('../images/gem-geo-icons.png') no-repeat;
+  background-size: 139px 50px;
+  height:22px;
+  width: 22px; 
+  display: inline-block;
+  vertical-align: bottom;
 }
-#social-data-container .elements-container span {
-  border:1px solid #2CC4D9;
+.gem-geo-icons.spending-icon {
+  background-position: 1px -1px;
 }
-#search-data-container .elements-container span {
-  border:1px solid #459DE7;
+.gem-geo-icons.social-icon {
+  background-position: -20px 0;
 }
-#entertainment-data-container .elements-container span {
-  border:1px solid #9578CF;
+.gem-geo-icons.search-icon {
+  background-position: -45px 0;
 }
-#health-data-container .elements-container span {
-  border:1px solid #9578CF;
+.gem-geo-icons.entertainment-icon {
+  background-position: -72px 0;
 }
-#location-data-container .elements-container span {
-  border:1px solid #9578CF;
+.gem-geo-icons.health-icon {
+  background-position: -95px 0;
+}
+.gem-geo-icons.transportation-icon {
+  background-position: -116px 0;
+}
+.account-tile section label {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 14px;
 }
 .account-tile .primary-btn {
   margin-top: 20px;
 }
-#spending-data-container .primary-btn {
-  background:#63E6AE;
+.primary-btn.spending-btn {
+  background:rgba(47, 223, 190, 1);
 }
-#social-data-container .primary-btn {
-  background:#2CC4D9;
+.primary-btn.social-btn {
+  background:#2CB4E3;
 }
-#search-data-container .primary-btn {
-  background:#459DE7;
+.primary-btn.search-btn {
+  background:#5986EB;
 }
-#entertainment-data-container .primary-btn {
+.primary-btn.entertainment-btn {
   background:#9578CF;
 }
-#health-data-container .primary-btn {
-  background:#9578CF;
+.primary-btn.health-btn {
+  background:#E26282;
 }
-#location-data-container .primary-btn {
-  background:#9578CF;
+.primary-btn.location-btn {
+  background:#F3B678;
 }
 .interval-tag {
   display: inline-block;
-  margin:2px 20px 0 0;
+  margin:2px 14px 0 0;
   padding:1px 8px;
   border:1px solid #363a4e;
   color:rgba(255,255,255,.4);
@@ -812,7 +836,7 @@ background
 }
 #circle-container {
   position: relative;
-  margin: 24px auto 0;
+  margin: 30px auto 0;
 }
 #circle-container strong {
     position: absolute;
@@ -828,7 +852,7 @@ background
 #chart{
   position:relative;
   width:500px;
-  height:100px;
+  height:90px;
 }
 @-webkit-keyframes bargrowth{
   0%   {max-height: 0%;}
@@ -853,19 +877,108 @@ background
   width:500px;
   font-family:Helvetica;
   font-size:12px;
+  padding: 20px 0;
 }
 .wrapper > h1, .wrapper > p{
   margin:0;
 }
-.element-icons {
-  background: url('../images/gem-geo-icons.png') no-repeat;
-  background-size: 121px 50px;
-  height:20px;
-  width:20px;
-  margin-right: 4px;
+.element {
+  margin:2px 2px 4px 0;
+  border:1px solid #101429;
   display: inline-flex;
+  overflow: hidden;
 }
-.element-icons.spending-icon {
-  background-position: 1px -26px;
+.element-content {
+  padding: 4px;
 }
+.element span {
+  font-size: 12px;
+  color:#101429;
+  line-height: 14px;
+  vertical-align: top;
+}
+.elements-container p {
+  line-height: 14px;
+  font-size: 12px;
+  margin-top: 6px;
+  font-weight: 500;
+  margin-bottom: 0;
+  hyphens: auto;
+  display: inline-block;
+}
+.element i {
+  font-size: 12px;
+  float: right;
+}
+.spending-element {
+  background:rgba(47, 223, 190, 0);
+  border-color:rgba(47, 223, 190, 1);
+  color:#101429;
+}
+.account-tile:hover .spending-element {
+  background:rgba(47, 223, 190, .1);
+}
+.spending-element.inactive:hover {
+  border-color:#2FDFBE;
+  color:#2FDFBE;
+}
+.spending-element:not(.inactive):hover {
+  background:#2FDFBE;
+}
+.social-element {
+  border-color:#19B3DD;
+  color:#19B3DD;
+}
+.social-element.inactive:hover {
+  border-color:#19B3DD;
+  color:#19B3DD;
+}
+.social-element:not(.inactive):hover {
+  background:#19B3DD;
+}
+.search-element {
+  border-color:#597DE8;
+  color:#597DE8;
+}
+.search-element.inactive:hover {
+  border-color:#597DE8;
+  color:#597DE8;
+}
+.search-element:not(.inactive):hover {
+  background:#597DE8;
+}
+.travel-element {
+  border-color:#ED9C46;
+  color:#ED9C46;
+}
+.travel-element.inactive:hover {
+  border-color:#ED9C46;
+  color:#ED9C46;
+}
+.travel-element:not(.inactive):hover {
+  background:#ED9C46;
+}
+.device-element {
+  border-color:#EA577F;
+  color:#EA577F;
+}
+.device-element.inactive:hover {
+  border-color:#EA577F;
+  color:#EA577F;
+}
+.device-element:not(.inactive):hover {
+  background:#EA577F;
+}
+.fitness-element {
+  border-color:#BF4DBB;
+  color:#BF4DBB;
+}
+.fitness-element.inactive:hover {
+  border-color:#BF4DBB;
+  color:#BF4DBB;
+}
+.fitness-element:not(.inactive):hover {
+  background:#BF4DBB;
+}
+
 

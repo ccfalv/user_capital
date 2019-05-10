@@ -32,7 +32,7 @@ var tabs = new Tabby('[data-tabs]');
   });
 
  // Add values to the values array and see what happens :)
-	var values = [0,10,20,30,40,50,60,70,80,90,100,110,120];
+	var values = [0,5,10,15,20,30,40,50,60,70,80,90,100];
 
 	drawChart(values,"#chart",10) // You can adjust the margin between each bar by changing 10 to whatever you like
 
