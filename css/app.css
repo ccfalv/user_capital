@@ -15,6 +15,7 @@ body {
 h1 {
   font-family: 'Michroma', sans-serif;
   font-size: 32px;
+  color:#C3EAFF;
 }
 nav {
   display: inline-flex;
@@ -33,7 +34,7 @@ nav {
   font-size: 18px;
   font-weight: 800;
   font-family: 'Michroma', sans-serif;
-  color:#101429;
+  color:#16212F;
   display: inline-flex;
 }
 .address-placeholder {
@@ -50,7 +51,7 @@ nav {
   min-width: 330px;
 }
 #stat-container {
-  background: #101429;
+  background: #16212F;
 }
 #user-sum.inner-container {
   padding:30px 0 24px;
@@ -169,6 +170,9 @@ button.secondary-btn {
 button.primary-btn {
   width: 100%;
   border-radius:0;
+  font-family: 'Michroma', sans-serif;
+  border-color:#16212F;
+  color:#16212F;
 }
 .stat-box {
   display:inline-block;
@@ -229,12 +233,11 @@ button.primary-btn {
   text-transform:uppercase;
 }
 #user-intro {
-  background: #101429;
   display: flex;
   margin: 0;
 }
 #user-intro h1 {
-  color:#fff;
+  color:#C3EAFF;
   margin:0px 0 0;
   display: inline-block;
   font-family: 'Michroma', sans-serif;
@@ -251,7 +254,7 @@ button.primary-btn {
   display: inline-block;
   line-height: 24px;
   display: block;
-  color:rgba(255,255,255,.6);
+  color:rgba(195, 234, 255, .4);
   margin: 6px 0 10px;
 }
 .data-input h5  i {
@@ -379,7 +382,7 @@ button.primary-btn {
   margin-bottom: 14px;
   vertical-align: top;
   font-weight: 700;
-  color:#101429;
+  color:#16212F;
   display: block;
   font-family: 'Michroma', sans-serif;
 }
@@ -387,6 +390,10 @@ button.primary-btn {
   float: right;
   font-size: 12px;
   line-height: 32px;
+}
+.account-tile h5 i {
+  opacity: .2;
+  margin-right: 4px;
 }
 .account-tile h1 { 
   color:#101429;
@@ -777,6 +784,7 @@ background
   width: 22px; 
   display: inline-block;
   vertical-align: bottom;
+  display: none;
 }
 .gem-geo-icons.spending-icon {
   background-position: 1px -1px;
@@ -826,17 +834,19 @@ background
   display: inline-block;
   margin:2px 14px 0 0;
   padding:1px 8px;
-  border:1px solid #363a4e;
-  color:rgba(255,255,255,.4);
+  background:#4C5B6D;
+  color:#16212F;
   text-decoration: none;
 }
 .interval-tag.active {
-  color:#fff;
-  background: #363a4e;
+  color:#16212F;
+  background: #C3EAFF;
 }
 #circle-container {
   position: relative;
   margin: 30px auto 0;
+  width:124px;
+  height: 124px;
 }
 #circle-container strong {
     position: absolute;
@@ -845,8 +855,8 @@ background
     width: 100%;
     text-align: center;
     line-height: 40px;
-    font-size: 32px;
-    color:#fff;
+    font-size: 24px;
+    color:#C3EAFF;
     font-family: 'Michroma', sans-serif;
 }
 #chart{
@@ -868,8 +878,8 @@ background
   position:absolute;
   bottom:0;
   display:inline-block;
-  background: #101429;
-  box-shadow: 1px -1px #363a4e, 2px -2px #363a4e, 3px -3px #363a4e, 4px -4px #363a4e, 5px -5px #363a4e, 6px -6px #363a4e, 7px -7px   #363a4e, 8px -8px #363a4e, 9px -9px #363a4e, 10px -10px #363a4e;
+  background: #4C5B6D;
+  box-shadow: 1px -1px #C3EAFF, 2px -2px #C3EAFF, 3px -3px #C3EAFF, 4px -4px #C3EAFF, 5px -5px #C3EAFF, 6px -6px #C3EAFF, 7px -7px   #C3EAFF, 8px -8px #C3EAFF, 9px -9px #C3EAFF, 10px -10px #C3EAFF;
 }
 .wrapper{
   text-align:center;
@@ -979,6 +989,21 @@ background
 }
 .fitness-element:not(.inactive):hover {
   background:#BF4DBB;
+}
+#dial-bg {
+  background: url('../images/dial-bg.png') no-repeat;
+  background-size: 124px 124px;
+  height:124px;
+  width: 124px;
+  position: absolute;
+  z-index: 101;
+  top: 0px;
+  left: 0px;
+}
+.status-bar {
+  width: 100%;
+  background: #eee;
+  height: 50px;
 }
 
 
