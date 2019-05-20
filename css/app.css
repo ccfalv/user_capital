@@ -172,7 +172,8 @@ button.primary-btn {
   border-radius:0;
   font-family: 'Michroma', sans-serif;
   border-color:#16212F;
-  color:#16212F;
+  color:#C3EAFF;
+  background:#16212F;
 }
 .stat-box {
   display:inline-block;
@@ -273,10 +274,10 @@ button.primary-btn {
   padding: 40px 200px 0 40px;
 }
 .category-icon {
-  background: url('../images/category-icons.png') no-repeat;
-  background-size: 242px 100px;
-  height:54px;
-  width: 60px;
+  background: url('../images/v2-cat-icons.png') no-repeat;
+  background-size: 188px 60px;
+  height:30px;
+  width: 30px;
   display: inline-block;
   float: left;
   margin:0 20px 0 0;
@@ -296,7 +297,7 @@ button.primary-btn {
 .account-menu ul li a {
   font-weight: 800;
   font-family: 'Michroma', sans-serif;
-  color:#838D8B;
+  color:#707d82;
 }
 .account-menu span {
   font-family: 'Inter var', sans-serif;
@@ -361,7 +362,7 @@ button.primary-btn {
 
 }
 .account-menu [role=tab] {
-  background:#eaeded;
+  background:#eaeced;
   border-top:1px solid #C9D0CF;
   border-right: 1px solid #C9D0CF;
   padding: 1.25em 2.2em;
@@ -811,6 +812,7 @@ background
 }
 .account-tile .primary-btn {
   margin-top: 20px;
+  background:#16212F;
 }
 .primary-btn.spending-btn {
   background:rgba(47, 223, 190, 1);
@@ -835,6 +837,7 @@ background
   margin:2px 14px 0 0;
   padding:1px 8px;
   background:#4C5B6D;
+  font-weight: 600;
   color:#16212F;
   text-decoration: none;
 }
