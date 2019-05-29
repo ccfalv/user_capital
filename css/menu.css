@@ -34,12 +34,12 @@
 #menuToggle span
 {
   display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 5px;
+  width: 23px;
+  height: 2px;
+  margin-bottom: 4px;
   position: relative;
   
-  background: #C9D0CF;
+  background: #16212f;
   border-radius: 3px;
   
   z-index: 1;
@@ -68,8 +68,8 @@
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  transform: rotate(45deg) translate(-2px, 0px);
+  background: #16212f;
 }
 
 /*
@@ -97,12 +97,13 @@
 {
   position: absolute;
   width: 300px;
-  min-height: 800px;
-  margin: -50px 50px 0 0px;
+  min-height: 390px;
+  margin: 8px 50px 0 0px;
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
+  background: #c3eaff;
+  overflow: hidden;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */

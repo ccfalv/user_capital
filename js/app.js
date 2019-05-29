@@ -19,7 +19,7 @@ var tabs = new Tabby('[data-tabs]');
   })(jQuery);
   $(".account-tile").on({
     mouseenter: function () {
-        $('#circle-container').circleProgress('value', 0.30);
+        $('#circle-container').circleProgress('value', 0.09);
     },
     mouseleave: function () {
         $('#circle-container').circleProgress('value', 0.00);
