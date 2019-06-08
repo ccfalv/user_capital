@@ -207,23 +207,26 @@ button.primary-btn:hover {
 .count-icon {
   margin: 0 auto;
 }
-.element-count-icon {
-  background:('../images/element-icon.png') no-repeat;
-  background-size: 44px 40px;
-  height:40px;
-  width: 44px;
+.element-icon {
+  background:url('../images/element-icon.png') no-repeat;
+  background-size: 14px 33px;
+  height:16px;
+  width: 14px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin:4px 2px 4px 0;
 }
 .source-count-icon {
   background: url('../images/source-icon.png') no-repeat;
-  background-size: 35px 40px;
-  height:40px;
-  width: 35px;
+  background-size: 27px 30px;
+  height:30px;
+  width: 27px;
 }
 .spectrum-count-icon {
   background: url('../images/spectrum-icon.png') no-repeat;
-  background-size: 43px 40px;
-  height:40px;
-  width: 43px;
+  background-size: 20px 18px;
+  height:20px;
+  width: 18px;
 }
 .count-icon h5 {
   text-align: center;
@@ -270,7 +273,7 @@ button.primary-btn:hover {
   margin-left: 6px;
 }
 #user-intro .bar {
-  width: 5.2%;
+  width: 1%;
   margin-right:0%;
 }
 #user-sum h5 {
@@ -635,82 +638,6 @@ transform: rotateX( -90deg ) translateZ(16px );
   left:47px;
   z-index: 99;
 }
-.account-graph .small-token-square figure {
-  background:rgba(255,255,255,0);
-  text-align: center;
-}
-.account-graph .small-token-square-3d figure i {
-}
-.spending-token-square figure {
-  background:linear-gradient(45deg, rgba(36, 187, 129, 0), rgba(36, 187, 129, .3));
-}
-.spending-token-square.active figure {
-  background:linear-gradient(-45deg, rgba(36, 187, 129, 0), rgba(36, 187, 129, 0));
-}
-.spending-token-square.active figure.front {
-  background: none;
-}
-.spending-token-square.active figure.right {
-  background:linear-gradient(0deg, #24bb77, #24bbb4);
-}
-.social-token-square figure {
-  background:linear-gradient(45deg, rgba(36, 187, 119, 0), rgba(36, 187, 180, .3));
-}
-.social-token-square.active figure {
-  background:linear-gradient(45deg, rgba(36, 187, 119, 0), rgba(36, 187, 180, 0));
-}
-.social-token-square.active figure.right {
-  background:linear-gradient(20deg, #24bbb4, #2498bb);
-}
-.social-token-square.active figure.front {
-  background:none;
-}
-.search-token-square.active figure.bottom {
-  background:#459DE7;
-  color:#367cb7;
-  opacity: 0;
-}
-.search-token-square.active figure.right {
- background:linear-gradient(55deg, #24aeb6, #2460bb);
-}
-.search-token-square.active figure.back {
-  background:linear-gradient(55deg, #24aeb6, #2460bb);
-  opacity: 0;
-}
-.entertainment-token-square.active figure.top {
-  background:none;
-}
-.entertainment-token-square.active figure.right {
-  background:linear-gradient(90deg, #246bba, #6524bb);
-  opacity:0;
-}
-.entertainment-token-square.active figure.front {
-  background:linear-gradient(90deg, #246bba, #6524bb);
-}
-.health-token-square.active figure.top {
-  background:none;
-}
-.health-token-square.active figure.right {
-  background:linear-gradient(120deg, #5636bb, #8824bb);
-  background:none;
-}
-.health-token-square.active figure.front {
-  background:linear-gradient(120deg, #5636bb, #8824bb);
-}
-.location-token-square.active figure.top{
-  background:#fdad7c;
-}
-.location-token-square.active figure.right{
-  background:linear-gradient(180deg, #7a29bb, #bb2478)
-  opacity:0;
-}
-.location-token-square.active figure.top{
-  background:linear-gradient(180deg, #7a29bb, #bb2478);
-  opacity:0;
-}
-.location-token-square.active figure.front{
-  background:linear-gradient(180deg, #7a29bb, #bb2478);
-}
 .user-token-square figure  {
   background:rgba(255,255,255,0);
 }
@@ -730,10 +657,10 @@ transform: rotateX( -90deg ) translateZ(16px );
   background:rgba(255,255,255,.5);
 }
 .right-token-square figure.front {
-  background:rgba(255,255,255,.3);
+  background:#4C5B6D;
 }
 .left-token-square figure.right {
-  background:rgba(255,255,255,.3);
+  background:#4C5B6D;
 }
 .large-token-square {
   position:absolute;
@@ -898,8 +825,7 @@ background
   position:absolute;
   bottom:0;
   display:inline-block;
-  background: #4C5B6D;
-  box-shadow: 1px -1px #C3EAFF, 2px -2px #C3EAFF, 3px -3px #C3EAFF, 4px -4px #C3EAFF, 5px -5px #C3EAFF, 6px -6px #C3EAFF, 7px -7px   #C3EAFF, 8px -8px #C3EAFF, 9px -9px #C3EAFF, 10px -10px #C3EAFF;
+  background: #C3EAFF;
 }
 .wrapper{
   text-align:center;
@@ -924,6 +850,9 @@ background
 .element:hover {
   background:#16212f;
   border-color:#c3eaff;
+}
+.element:hover .element-icon {
+  background-position:0px -17px; 
 }
 .element:hover p {
   color:#c3eaff;
