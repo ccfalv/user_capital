@@ -7,12 +7,12 @@ html { font-family: 'Inter', sans-serif; }
      }
 }
 body {
-  background:#eaeded;
   overflow-x:hidden;
+  background:#eaeded url('../images/hex-bg.png') repeat;
 }
 .header {
   background:#fff;
-  padding:6px 40px 8px;
+  padding:10px 40px;
   font-size: 14px;
 }
 h1 {
@@ -25,7 +25,11 @@ nav {
   float:right;
 }
 .header a {
-  color:#363A3B;
+  color:blue;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Michroma', sans-serif;
+  text-decoration: none;
 }
 .header i {
   color:#101429;
@@ -904,5 +908,8 @@ background
 }
 .activity-indicator-line {
   background:url;
+}
+.address {
+  text-align: center;
 }
 
