@@ -2,7 +2,7 @@
 	height: 620px;
 	position: relative;
 	overflow: hidden;
-	background:#eaeded;
+	background:#e2e8f0;
 }
 .sticky-header .sticky-inner {
   background:#eaeded;
@@ -109,10 +109,15 @@ h1 {
   display: block;
   overflow: hidden;
 }
-.hero-content button {
-	margin:30px 10px 0 0;
+.hero-content form {
+	margin-top:30px;
 }
-
+.hero-content form input {
+  vertical-align: top;
+}
+.hero-content form button {
+  margin-top:1px;
+}
 .grid-base {
   display: flex;
   flex-wrap: wrap;

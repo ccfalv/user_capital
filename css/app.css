@@ -85,19 +85,6 @@ body {
 #user-sales .table-container section:nth-child(2){
   flex-grow:8;
 }
-button {
-  border-color:#323738;
-  background:#f4b95e;
-  color:#323738;
-}
-button.primary-btn {
-  border-color:#323738;
-  background: #C9D0D0;
-  color:#323738;
-}
-button.secondary-btn {
-  border-color:#454D4D;
-}
 .stat-box {
   display:inline-block;
   margin:4px 20px;
