@@ -114,6 +114,7 @@ h1 {
 }
 .hero-content form input {
   vertical-align: top;
+  width: 350px;
 }
 .hero-content form button {
   margin-top:1px;
