@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
@@ -48,11 +49,19 @@ nav {
   padding: 4px 0;
   margin: 0;
   text-align: right;
+=======
+body {
+  background:#e2e8f0;
+  color: #000; 
+}
+.container {
+>>>>>>> master
 }
 .row {
   display: flex;
 }
 .inner-container {
+<<<<<<< HEAD
   border-left:1px solid #C9D0CF;
   width:25%;
   min-width: 330px;
@@ -70,10 +79,20 @@ nav {
   text-align: center;
   font-size: 40px;
 }
+=======
+  border:1px solid #454D4D;
+  width:30%;
+  min-width: 330px;
+}
+#user-sum.inner-container {
+  padding:30px 0 24px;
+}
+>>>>>>> master
 .content {
   padding: 30px 40px 10px;
 }
 .inner-container:nth-child(even) {
+<<<<<<< HEAD
   width: 75%;
 }
 #user-sum {
@@ -85,12 +104,24 @@ nav {
   background: url('../images/user-capital-logomark.png') no-repeat;
   background-size: 67px 39px;
   height:39px;
+=======
+  width: 70%;
+}
+#user-sum {
+  text-align: center;
+}
+.logo {
+  background: url('../images/user-capital-logomark.png') no-repeat;
+  background-size: 67px 40px;
+  height:40px;
+>>>>>>> master
   width: 67px;
 }
 #user-sum .logo {
   margin:0px auto 14px;
 }
 .table-container {
+<<<<<<< HEAD
   max-height:86px;
   height: 86px;
   border-bottom:1px solid #C9D0CF;
@@ -113,6 +144,13 @@ nav {
   color:#000;
   font-size: 24px;
 }
+=======
+  max-height: 72px;
+  height: 72px;
+  border-bottom:1px solid #454D4D;
+  overflow: hidden;
+}
+>>>>>>> master
 #user-profile .table-container {
   padding:0px;
 }
@@ -137,6 +175,7 @@ nav {
   border-color: transparent transparent #9EC7BE transparent;
 }
 .table-container i {
+<<<<<<< HEAD
   color: #C9D0D0;
   margin-right: 8px;
   font-size: 14px;
@@ -145,6 +184,13 @@ nav {
   color:#363A3B;
 }
 #user-sales {
+=======
+  font-size: 26px;
+  color: #454D4D;
+}
+.table-container.active i {
+  color: #fff;
+>>>>>>> master
 }
 #user-sales .table-container {
    display: flex;
@@ -162,6 +208,7 @@ nav {
 #user-sales .table-container section:nth-child(2){
   flex-grow:8;
 }
+<<<<<<< HEAD
 button.secondary-btn {
   width: 100%;
   border-radius:0;
@@ -184,6 +231,8 @@ button.primary-btn {
 button.primary-btn:hover { 
   color:#C3EAFF;
 }
+=======
+>>>>>>> master
 .stat-box {
   display:inline-block;
   margin:4px 20px;
@@ -196,6 +245,7 @@ button.primary-btn:hover {
   overflow: hidden;
 }
 #user-intro section {
+<<<<<<< HEAD
   margin: 0px 50px 0 0;
   position:relative;
   vertical-align: top;
@@ -203,6 +253,15 @@ button.primary-btn:hover {
 #user-intro p {
   line-height: 20px;
 }
+=======
+  display: inline-block;
+  margin: 0px 50px 0 0;
+  text-align: center;
+  position:relative;
+  line-height: 40px;
+  vertical-align: top;
+}
+>>>>>>> master
 #user-intro .stat-container i {
   color:#454D4D;
   font-size: 30px;
@@ -211,6 +270,7 @@ button.primary-btn:hover {
 .count-icon {
   margin: 0 auto;
 }
+<<<<<<< HEAD
 .element-icon {
   background:url('../images/element-icon.png') no-repeat;
   background-size: 14px 33px;
@@ -231,6 +291,25 @@ button.primary-btn:hover {
   background-size: 20px 18px;
   height:20px;
   width: 18px;
+=======
+.element-count-icon {
+  background: url('../images/element-icon.png') no-repeat;
+  background-size: 44px 40px;
+  height:40px;
+  width: 44px;
+}
+.source-count-icon {
+  background: url('../images/source-icon.png') no-repeat;
+  background-size: 35px 40px;
+  height:40px;
+  width: 35px;
+}
+.spectrum-count-icon {
+  background: url('../images/spectrum-icon.png') no-repeat;
+  background-size: 43px 40px;
+  height:40px;
+  width: 43px;
+>>>>>>> master
 }
 .count-icon h5 {
   text-align: center;
@@ -245,6 +324,7 @@ button.primary-btn:hover {
   padding:5px 0 0 14px;
   text-transform:uppercase;
 }
+<<<<<<< HEAD
 #user-intro {
   display: flex;
   margin: 0;
@@ -282,11 +362,16 @@ button.primary-btn:hover {
 }
 #user-sum h5 {
   color: #fff;
+=======
+#user-intro h5 {
+  margin-bottom: 10px;
+>>>>>>> master
 }
 #user-intro .content {
   padding: 40px 200px 0 40px;
 }
 .category-icon {
+<<<<<<< HEAD
   background: url('../images/v2-cat-icons.png') no-repeat;
   background-size: 130px 40px;
   height:30px;
@@ -294,10 +379,18 @@ button.primary-btn:hover {
   display: inline-block;
   float: left;
   margin:2px 10px 2px 0;
+=======
+  background: url('../images/category-icons.png') no-repeat;
+  background-size: 218px 30px;
+  height:30px;
+  width: 30px;
+  display: inline-block;
+>>>>>>> master
 }
 .inactive .category-icon {
   opacity: .2;
 }
+<<<<<<< HEAD
 .account-container {
   background:#fff;
 }
@@ -913,3 +1006,35 @@ background
   text-align: center;
 }
 
+=======
+.category-icon.spending-icon {
+  background-position: 0 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.social-icon {
+  background-position: -36px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.search-icon {
+  background-position: -76px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.health-icon {
+  background-position: -114px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.travel-icon {
+  background-position: -76px 0;
+  height:30px;
+  width: 36px;
+}
+.category-icon.device-icon {
+  background-position: -154px 0;
+  height:30px;
+  width: 36px;
+}
+>>>>>>> master
