@@ -9,7 +9,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 body {
   overflow-x:hidden;
-  background:#eaeded url('../images/hex-bg.png') repeat;
+  background:#e2e8f0 url('../images/hex-bg.png') repeat;
 }
 .header {
   background:#fff;
@@ -32,12 +32,6 @@ nav {
   font-family: 'Michroma', sans-serif;
   text-decoration: none;
 }
-.header i {
-  color:#101429;
-  font-size: 12px;
-}
-.header .active i {
-}
 .wordmark {
   font-size: 15px;
   font-weight: 800;
@@ -49,19 +43,11 @@ nav {
   padding: 4px 0;
   margin: 0;
   text-align: right;
-=======
-body {
-  background:#e2e8f0;
-  color: #000; 
-}
-.container {
->>>>>>> master
 }
 .row {
   display: flex;
 }
 .inner-container {
-<<<<<<< HEAD
   border-left:1px solid #C9D0CF;
   width:25%;
   min-width: 330px;
@@ -78,8 +64,6 @@ body {
   float: left;
   text-align: center;
   font-size: 40px;
-}
-=======
   border:1px solid #454D4D;
   width:30%;
   min-width: 330px;
@@ -87,12 +71,10 @@ body {
 #user-sum.inner-container {
   padding:30px 0 24px;
 }
->>>>>>> master
 .content {
   padding: 30px 40px 10px;
 }
 .inner-container:nth-child(even) {
-<<<<<<< HEAD
   width: 75%;
 }
 #user-sum {
@@ -104,7 +86,6 @@ body {
   background: url('../images/user-capital-logomark.png') no-repeat;
   background-size: 67px 39px;
   height:39px;
-=======
   width: 70%;
 }
 #user-sum {
@@ -114,7 +95,6 @@ body {
   background: url('../images/user-capital-logomark.png') no-repeat;
   background-size: 67px 40px;
   height:40px;
->>>>>>> master
   width: 67px;
 }
 #user-sum .logo {

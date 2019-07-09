@@ -2,7 +2,7 @@
 	height: 600px;
 	position: relative;
 	overflow: hidden;
-	background:#323738;
+   background:#fff url('../images/hex-bg.png') repeat;
 }
 .sticky-header .sticky-inner {
   background:#eaeded;
@@ -28,7 +28,7 @@
 	padding: 40px 50px;
 }
 h5,h2, h1 {
-	font-family: 'Crete Round', serif;
+	font-family:'Michroma', sans-serif;
 }
 h3,h4 {
   font-family: 'Roboto', sans-serif;
@@ -44,41 +44,8 @@ p {
 .main-menu .active span i {
   color:#EEC050;
 }
-.main-menu span:hover {
-  color: #fff;
-}
-.main-menu span:hover i {
-  color:#EEC050;
-}
-.main-menu span {
-	line-height: 18px;
-	color: #C9D0D0;
-}
-.main-menu .active span i {
-  color:#f4b95e;
-}
-.main-menu span:hover {
-  color: #323738;
-}
-.main-menu span:hover i {
-  color:#f4b95e;
-}
-.main-menu span {
-	line-height: 18px;
-	color: #828686;
-}
-.main-menu span i {
-  font-size: 8px;
-  line-height: 18px;
-  vertical-align: top;
-  margin-right: 4px;
-}
-.main-menu .columns:last-child i {
-  transform: rotate(-90deg);
-  margin:0 4px 0 0;
-}
 h1 {
-	color: #fff;
+	color: #000;
 }
 .hero p {
 	color:#C9D0CF;
@@ -88,10 +55,14 @@ h1 {
 }
 .logo-container .logo {
   background: url('../images/logo.png') no-repeat;
-  background-size: 22px 22px;
-  height:23px;
+  background-size: 23px 24px;
+  height:24px;
   width: 23px;
   display: inline-block;
+  margin-right: 10px;
+}
+.logo-container span {
+  vertical-align: top;
 }
 .alt-logo {
   background: url('../images/user-capital-logo-big.png') no-repeat;
@@ -106,13 +77,15 @@ h1 {
 	line-height: 21px;
 	letter-spacing: 1px;
 	vertical-align: top;
-	font-size: 18px;
-	margin:-3px 0 0 10px;
+	font-size: 16px;
+	margin:0px 0 0 0px;
 	font-weight: 800;
 	color: #000;
+  font-family: 'Michroma', sans-serif;
 }
+
 .hero-content {
-	padding-top:0px;
+	padding-top:50px;
   display: block;
   overflow: hidden;
 }
@@ -127,9 +100,8 @@ h1 {
   width: 350px;
 }
 .hero-content form button {
-  margin-top:1px;
+  margin-top:0px;
 }
->>>>>>> master
 .grid-base {
   display: flex;
   flex-wrap: wrap;
@@ -181,7 +153,6 @@ h1 {
 	height: 200px;
 	margin:0px 0;
   background: #fff;
->>>>>>> master
 }
 .section-content {
 	padding:30px 0;
@@ -240,7 +211,15 @@ h1 {
   left: 431px;
   top: 426px;
 }
-
-
-
-
+.token-price {
+  font-size: 16px;
+  color:#000;
+  font-weight: 800;
+  margin-top:-8px;
+  font-family: 'Michroma', sans-serif;
+}
+.token-price i {
+  color:#0000ff;
+  vertical-align: top;
+  font-size: 14px;
+}
