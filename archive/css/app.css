@@ -20,6 +20,10 @@ h1 {
   font-size: 32px;
   color:#C3EAFF;
 }
+nav {
+  display: inline-flex;
+  float:right;
+}
 .header a {
   color:#363A3B;
 }

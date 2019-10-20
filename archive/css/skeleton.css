@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0 20px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -53,7 +53,7 @@
     width: 100%; }
   .column,
   .columns {
-    margin-left: 0%; }
+    margin-left: 4%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -67,7 +67,7 @@
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 78.0%;          }
+  .nine.columns                   { width: 74.0%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
@@ -123,8 +123,11 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
+<<<<<<< HEAD
+=======
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #575e69; }
+>>>>>>> master
+  color: #838D8B; }
 
 
 /* Typography
@@ -170,8 +173,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height:52px;
-  padding: 0 44px;
+  height: 45px;
+  padding: 0 14px;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -187,7 +190,7 @@ input[type="button"] {
   border:none; }
 .button:hover,
 button:hover,
-input[type="submit"]:hover,
+input[type="submit"]:5over,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 .button:focus,
@@ -195,6 +198,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
+  color: #333;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -325,7 +329,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #b1c3da; }
+  border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
