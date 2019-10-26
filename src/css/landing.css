@@ -1,0 +1,547 @@
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+button {
+  background: #1877F2;
+  font-size: 12px;
+}
+button:hover {
+  opacity: .8;
+}
+.sidebar button {
+  width: inherit;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  z-index: 101;
+}
+button.secondary-btn {
+  background:#0a0c0f;
+  color:#fff;
+}
+@media (min-width: 550px) {
+  button {
+  font-size:16px;
+  }
+}
+.logo {
+  background: #eee;
+}
+nav {
+  position: absolute;
+}
+.header {
+  background: #fff;
+  border-bottom:1px solid #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.header .three {
+  display: flex;
+  padding:0 20px;
+}
+.header .menu {
+  border-left: 1px solid #eee;
+  padding:0 40px;
+}
+.menu a.toggle {
+  margin:10px 10px 10px 0;
+  display: inline-block;
+  color:rgba(0,0,0,.5);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: 1em;
+  font-size:14px;
+}
+.menu a.toggle.active { 
+  color:rgba(0,0,0,1);
+}
+.menu a {
+  color:#0a0c0f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.cta-link  {
+  color:#1877F2;
+}
+.campaign-title {
+  font-size: 18px;
+  font-weight: 600;
+  color:#353AC7;
+}
+.header .user-num {
+  display: inline;
+}
+.header span {
+  line-height: 44px;
+  color:#0a0c0f;
+}
+
+.header button {
+  margin-bottom: 0;
+}
+.uu-logo {
+  text-align: center;
+  flex: 1;
+  line-height: 42px;
+  color:#0a0b0e;
+}
+.menu ul { 
+  display:flex;
+  margin:0;
+}
+.menu  ul li {
+  text-align: right;
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin-bottom: 0;
+}
+.hero  {
+	position: relative;
+  padding:100px 100px;
+	overflow: hidden;
+  background:url('../images/zuck.png') no-repeat;
+  background-size: cover;
+  color:#fff;
+  display: none;
+}
+.how-it-works {
+  padding: 100px;
+  color:#080d19;
+  position: relative;
+  overflow: hidden;
+  background: #ddd;
+  text-align:center;
+  display: none;
+}
+.steps-img {
+  background:url('../images/steps-img.png') no-repeat;
+  background-size: 600px 200px;
+  width: 200px;
+  height:200px;
+  margin:0 auto;
+}
+.sidebar {
+  height: 100vh;
+}
+.sidebar-content {
+  position: fixed;
+  width: inherit;
+  background:#0a0c0f;
+  height: 100vh;
+}
+.sidebar-content strong {
+  color:#1877F2;
+}
+.sidebar-content h5 {
+  color:#fff;
+}
+.sidebar-menu li {
+  margin:0;
+}
+.sidebar-menu li a span {
+  padding:0 6px;
+  line-height: 22px;
+  border:1px solid #788697;
+  border-radius: 50%;
+  float: right;
+}
+.sidebar-menu .active span {
+  color:#1877F2;
+  border-color:#1877F2;
+}
+.sidebar-menu li a i {
+  display: none;
+}
+.sidebar-menu .active i {
+  color:#1877F2;
+}
+.sidebar h5 {
+  text-align: center;
+}
+.sidebar p {
+  text-align: center;
+  font-size: 22px;
+  margin:20px 40px 10px;
+  color:#fff;
+}
+.sidebar-menu [role=tab][aria-selected=true] {
+    background: #0a0c0f;
+    color: #fff;
+}
+.sidebar-menu [role=tab] {
+    background: #0a0c0f;
+    border-top: 1px solid #2e3135;
+    padding: 1.25em 2.2em;
+    color: #788697;
+}
+.sidebar-menu[role=tablist]{
+  border-bottom: 1px solid #2e3135;
+}
+.sidebar section {
+  border-top:1px solid #2e3135;
+  display: flex;
+  padding:10px 20px;
+}
+.sidebar section span {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.sidebar section span aside {
+  font-size: 10px;
+  color:#1877F2;
+}
+.sidebar section span:nth-child(1) {
+  flex-grow: 2;
+  color:#fff;
+  line-height:16px;
+}
+.sidebar section span:nth-child(2) {
+  color:#1877F2;
+  font-size: 22px;
+  font-weight: 100;
+}
+.log {
+  background: #fff;
+}
+.log h2 {
+  color:rgba(0,0,0,.5);
+}
+.user-num {
+   color:#1877F2;
+   display: block;
+   font-weight: 100;
+   font-family: 'Michroma', sans-serif;
+   font-size: 14px;
+}
+.user-sum {
+   color:#1877F2;
+   font-weight: 100;
+   font-family: 'Michroma', sans-serif;
+   font-size: 14px;
+}
+.user-name {
+  display: inline-block;
+}
+.log .ledger {
+  min-height: 700px;
+  margin-top:46px;
+  margin-bottom:0px;
+  position: relative;
+  float: right;
+  background:url('../images/zuck-light.png') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 550px) {
+  .log .ledger { 
+    margin-bottom:50px;
+  }
+}
+.profile-container {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  float: right;
+  background:url('../images/zuck-light.png') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.log tr {
+  display: flex;
+}
+.log td:first-child {
+  padding-left: 40px;
+}
+.log td:nth-child(3) {
+  flex-grow: 2;
+}
+.log td:last-child {
+  padding-right: 40px;
+}
+.log span {
+  font-size:18px;
+  line-height: 24px;
+}
+.log label {
+  margin:0;
+}
+.cta {
+  position: relative;
+  padding:100px;
+  overflow: hidden;
+  background:url('../images/zuck.png') no-repeat;
+  background-size: cover;
+  color:#fff;
+  text-align:center;
+  display: none;
+}
+.transaction-log {
+  margin:20px 0 0 16px;
+}
+.transaction-log li {
+  list-style: none;
+  width: 90%;
+  border-bottom:1px solid #ccc;
+  border-left:1px dashed #0a0c0f;
+  padding:30px 0;
+  margin:1px 0;
+  display: inline-flex;
+}
+.transaction-log li:hover {
+  background: linear-gradient(45deg,rgba(255,255,255,0), rgba(255,255,255,.7));
+  cursor: pointer;
+}
+.transaction-log li:nth-child(1) {
+  padding-top:0;
+  margin-top:30px;
+}
+.transaction-log li:nth-child(1):hover {
+  background: inherit;
+}
+.transaction-log li:last-child {
+  border-bottom:none;
+}
+.campaign-avatar {
+  position: relative;
+  height: 116px;
+  width: 116px;
+  margin:70px auto 30px;
+  border-radius:50%;
+}
+.avatar {
+  position: relative;
+  height: 42px;
+  width: 42px;
+}
+.avatar img {
+  border-radius: 50%;
+}
+.avatar-placeholder {
+  background:url('../images/avatar-placeholder.png') no-repeat;
+  background-size:42px 42px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+.facebook-logo {
+  background:url('../images/fb-logo.png') no-repeat;
+  background-size:116px 116px;
+  height: 116px;
+  width: 116px;
+}
+.transaction-content {
+  padding:0 0 0 40px;
+  margin-top:-10px;
+  width: 80%;
+}
+.transaction-content span {
+  line-height: 10px;
+  font-size:20px;
+}
+#circle-container {
+  position: relative;
+  margin: 30px auto 0;
+  width:124px;
+  height: 200px;
+}
+#circle-container strong {
+    position: absolute;
+    top: 90px;
+    left:30px;
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    font-size: 30px;
+    color:#0a0c0f;
+    font-family: 'Michroma', sans-serif;
+}
+.profile-content {
+  margin-top: 42px;
+  padding: 40px;
+  overflow: hidden;
+}
+@media (min-width: 550px) {
+  .profile-content {
+  max-width: 60%
+  }
+}
+@media (min-width: 550px) {
+  .profile-content aside {
+  max-width: 60%
+  }
+}
+.profile-content h3 {
+  color:#0a0c0f;
+}
+.step-number {
+  color:#1877F2;
+}
+.signup-step-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.profile-content .em {
+    position: absolute;
+    font-size: 440px;
+    opacity: .1;
+    float: right;
+    bottom: -127px;
+    right: -50px;
+    z-index: 0;
+}
+.profile-content aside {
+  display: block;
+  padding-top:40px;
+}
+@media (min-width: 550px) {
+  .profile-content aside {
+  max-width: 60%
+  }
+}
+.profile-content aside span {
+  line-height: 28px;
+  font-style: italic;
+}
+.profile-content i {
+  font-size: 12px;
+  vertical-align: top;
+}
+.profile-content i {
+  color:#1877F2;
+  font-size: 12px;
+}
+.uu-logo-mark {
+  background:url('../images/uu-logo.png') no-repeat;
+  background-size:60px 60px;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+}
+.signup-icon {
+  background:url('../images/signup-icons.png') no-repeat;
+  background-size:191px 120px;
+  height: 60px;
+  width: 60px;
+}
+.connect-step {
+  background-position: 0px 0;
+}
+.secure-step {
+  background-position: -30px 0;
+}
+.post-step {
+  background-position: -60px 0;
+}
+.active .connect-step {
+  background-position: 0px -30px;
+}
+.active .secure-step {
+  background-position: -30px 0;
+}
+.active .post-step {
+  background-position: -60px 0;
+}
+.sidebar-menu .active {
+  color:#fff;
+}
+.menu-btn span {
+  margin-right: 8px;
+}
+.login-btn .avatar {
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin:3px 0 0;
+}
+.login-btn .avatar-placeholder {
+  background-size:30px 30px;
+  height: 30px;
+  width: 30px;
+}
+.mobile-login-btn {
+  position: absolute;
+  display: none;
+  right: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 550px) {
+  .mobile-login-btn {
+    display: block;
+    color:#0a0c0f;
+  }
+}
+@media (max-width: 550px) {
+  .menu {
+    display: none;
+    line-height: 30px;
+  }
+}
+.profile-header {
+  display: inline-flex;
+  margin-bottom:30px;
+}
+.profile-header section {
+flex-grow: 2;
+margin-top:10px;
+}
+.profile-header section h3 {
+  margin-bottom: 0;
+}
+.profile-header .avatar {
+  margin:0px 20px 0 0;
+  height:86px;
+  width: 86px;
+}
+.profile-header .avatar-placeholder {
+  background-size:86px 86px;
+  height: 86px;
+  width: 86px;
+}
+.user-stats {
+  display: inline-flex;
+  width: 100%;
+  margin:30px 0 30px;
+}
+.user-stats div {
+  flex-grow: 1;
+}
+.user-stats div  h3 {
+  line-height: 10px;
+  color:#1777f2;
+}
+.total-boycott-sum {
+  color:#fff;
+  font-size: 20px;
+  line-height: 34px;
+}
+.modal__footer {
+  display: flex;
+}
+.modal__footer button {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+

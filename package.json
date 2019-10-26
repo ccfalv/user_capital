@@ -1,29 +1,71 @@
 {
-  "name": "users_united_1",
+  "name": "user_capital",
   "description": "platform for users to initiate boycott against big companies",
-  "version": "0.0.1",
+  "version": "0.3.0",
+  "private": true,
+  "homepage": "http://iamswain25.github.io/user_capital",
+  "wasmStudio": {
+    "name": "User Capital",
+    "description": "Platform for expressing users' dissents against other platform",
+    "icon": "typescript-lang-file-icon"
+  },
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.11",
+    "@types/react": "16.9.5",
+    "@types/react-dom": "16.9.1",
+    "@types/react-router-dom": "^5.1.0",
+    "@types/react-router-hash-link": "^1.2.1",
+    "@types/react-scrollable-anchor": "^0.6.0",
+    "chart.js": "^2.8.0",
+    "nearlib": "^0.14.0",
+    "react": "^16.10.2",
+    "react-chartjs-2": "^2.8.0",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.2.0",
+    "react-scrollable-anchor": "^0.6.1",
+    "resolve-url-loader": "^3.1.0",
+    "typescript": "3.6.3",
+    "use-interval": "^1.1.0",
+    "near-runtime-ts": "^0.2.1",
+    "serve": "^11.0.1"
+  },
   "scripts": {
-    "build": "mkdir -p out/ && gulp",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "start:contract": "serve .",
+    "build:contract": "mkdir -p out/ && gulp",
     "deploy:contract": "near deploy",
-    "prestart": "npm run build && npm run deploy:contract",
-    "start": "serve .",
-    "test": "npm run build && jest test --env=near-shell/test_environment"
+    "prestart:contract": "npm run build:contract && npm run deploy:contract",
+    "test:contract": "npm run build && jest test --env=near-shell/test_environment"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "assemblyscript-json": "github:nearprotocol/assemblyscript-json",
     "bignum": "github:MaxGraey/bignum.wasm",
     "gulp": "^4.0.2",
     "jest": "^24.8.0",
     "jest-environment-node": "^24.8.0",
     "near-shell": "github:nearprotocol/near-shell"
-  },
-  "wasmStudio": {
-    "name": "Users United",
-    "description": "Platform for expressing users' dissents against other platform",
-    "icon": "typescript-lang-file-icon"
-  },
-  "dependencies": {
-    "near-runtime-ts": "^0.2.1",
-    "serve": "^11.0.1"
   }
 }
