@@ -137,7 +137,7 @@ a.cta-link  {
 .sidebar-content {
   position: fixed;
   width: inherit;
-  background:#0a0c0f;
+  background:#fff;
   height: 100vh;
 }
 .sidebar-content strong {
