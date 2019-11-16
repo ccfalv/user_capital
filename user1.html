@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" />
+  <title>Users United</title>
+  <meta name="description" content="Users United" />
+  <meta name="author" content="" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Major+Mono+Display|Roboto:700,300,100"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/main.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="css/landing.css" />
+  <link rel="stylesheet" type="text/css" href="css/fa.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/modal.css" />
+  <link rel="stylesheet" type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/tabby-ui-vertical.min.css" />
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="columns three">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <ul id="menu">
+                <div class="uu-logo-mark"></div>
+                <a href="#">
+                  <li>Home</li>
+                </a>
+                <a href="#">
+                  <li>About</li>
+                </a>
+                <a href="#">
+                  <li>Info</li>
+                </a>
+                <a href="#">
+                  <li>Contact</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+          <div class="uu-logo">
+            <a href="/" style="text-decoration: none; color: black;"><strong>USERS</strong>UNITED</a>
+          </div>
+          <div class="mobile-login-btn">
+            </span><i class="fa fa-lock"></i></span>
+          </div>
+        </div>
+        <div class="menu columns nine">
+          <span>#BOYCOTT<strong>FACEBOOK</strong></span>
+          <ul class="u-pull-right">
+            <li classs="share-btn">
+              <a href="#" onclick="fbShare()"><span> <i class="fa fa-share"></i>SHARE</span>
+              </a>
+            </li>
+            <li class="login-btn">
+              <a href="#"><span>LOGIN</span>
+                <div class="avatar" id="fbAvatar">
+                  <div class="avatar-placeholder"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-it-works">
+    <div class="container">
+      <div class="row">
+        <div class="columns twelve">
+          <h2>How it works</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns four">
+          <h5>Connect Facebook</h5>
+          <div class="steps-img"></div>
+          <p>We're only as strong as our newest member</p>
+        </div>
+        <div class="columns four">
+          <h5>Stop using it</h5>
+          <div class="steps-img"></div>
+          <p>We're only as strong as our newest member</p>
+        </div>
+        <div class="columns four">
+          <h5>Spread the word</h5>
+          <div class="steps-img"></div>
+          <p>We're only as strong as our newest member</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="log">
+    <div class="container">
+      <div class="row">
+        <div class="columns three sidebar">
+          <div class="sidebar-content">
+            <div class="campaign-avatar">
+              <div class="facebook-logo"></div>
+            </div>
+            <h5>Join Boycott</h5>
+
+            <canvas id="myChart"></canvas>
+            <ul class="sidebar-menu" data-tabs>
+              <li><a data-tabby-default href="#connect-near">
+                  Create <span>1</span>
+                </a></li>
+              <li><a href="#connect-near">
+                  Connect <span>2</span></i>
+                </a></li>
+              <li><a href="#post-reason">
+                  Verify <span>3</span>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="connect-near" class="columns nine profile-container">
+          <div class="profile-content">
+            <span><i class="fa fa-bolt"></i></span>
+            <h3>Create Account</h3>
+            <p>We're using blockchain technology to host user account data. We believe the future of the web is a decentralized ecosystem where everyone controls and owns their own data.</p>
+            <button class="secondary-btn" onclick="nearLogin()">Create Account</button>
+            <aside><span><i class="fa fa-asterisk"></i>NEAR is a sharded, developer-friendly, proof-of-stake public
+                blockchain.<a href="#">Learn more</a></span></aside>
+          </div>
+        </div>
+        <div id="connect-facebook" class="columns nine profile-container">
+          <div class="profile-content">
+            <span class="step-number">Step Two</span>
+            <h3>Connect Facebook</h3>
+            <p>Connect your Facebook account just like you would with any other app. However, instead of mining your
+              data, Users United will only access your name, avatar and last login to track your boycott.</p>
+            <button class="secondary-btn" onclick="facebookLogin()">Log In With Facebook</button>
+            <aside><span><i class="fa fa-asterisk"></i>Yes, the irony of needing to connect Facebook in order boycott
+                Facebook is not lost on us. But
+                as Sun Tzu said, "The opportunity of defeating the enemy is provided by the enemy." ¯\_(ツ)_/¯</span>
+            </aside>
+          </div>
+          <p>
+        </div>
+        <div id="post-reason" class="columns nine profile-container">
+          <div class="profile-content">
+            <span>Step Three</span>
+            <h3>Verify Boycoot</h3>
+            <p>What are your reasons for boycotting Facebook? Tired of the lack of privacy, disinformation, fake news,
+              your uncle's rants? There's no end, really, so be sure to tell Zuck why you're boycotting Facebook. </p>
+            <input class="u-full-width" type="text" maxlength="50" id="message" autofocus
+              placeholder="I am boycotting facebook because..." style="flex: 1;"
+              onkeyup="event.keyCode === 13 && sendMessage()" />
+            <!-- <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea> -->
+            <button class="secondary-btn" onclick="sendMessage()">Post Boycott</button>
+            <aside><span><i class="fa fa-asterisk"></i>Your message will be formatted as <strong>{Your Name}</strong> is
+                boycotting Facebook because <strong>{your reason}. Surely there is a better way of handling this, but
+                  for now it works (fingers crossed).</span></aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/js/micromodal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/tabby.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/nearprotocol/nearlib@0.13.2/dist/nearlib.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/src/config.js"></script>
+    <script src="/js/near.js"></script>
+    <script src="/js/join.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/js/common.js"></script>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "384002515644565",
+          cookie: true,
+          xfbml: true,
+          version: "v4.0"
+        });
+
+        FB.AppEvents.logPageView();
+        joinInit();
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+</body>
+
+</html>

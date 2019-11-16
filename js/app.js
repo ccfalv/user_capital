@@ -27,3 +27,7 @@
     $("#circle-container").circleProgress("value", 0.5);
   });
 })(jQuery);
+
+window.onload = function() {
+      //tabs 
+      var tabs = new Tabby('[data-tabs]');
