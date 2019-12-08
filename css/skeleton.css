@@ -171,17 +171,16 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height:52px;
-  padding: 0 44px;
+  padding: 0 20px;
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: .1rem;
   text-decoration: none;
   white-space: nowrap;
   background-color:#0000ff;
   border-radius: 0px;
-  font-family: 'Michroma', sans-serif;
   cursor: pointer;
   box-sizing: border-box;
   border:none; }
@@ -202,8 +201,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #0000ff;
-  border-color: #33C3F0; }
+  background-color: #1ca56c;
+  border-color:none; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,

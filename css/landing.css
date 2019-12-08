@@ -18,12 +18,14 @@ body {
 h1 {
   font-size: 80px;
   font-weight: bold;
-  color:#beffe5;
+  color:#000;
   font-family: 'ogg-bold', serif;
 }
 h2 {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
+  font-family: 'ogg-bold', serif;
+  color:#beffe5;
 }
 p {
   font-size: 2.5rem;
@@ -50,25 +52,47 @@ button.sidebar-btn {
   }
 }
 .logo {
-  background: #eee;
+  color:#000;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.logo a {
+  color:#129461;
+  font-weight: 300;
+  text-decoration: none;
+}
+.header a {
+  color:#129461;
+
 }
 nav {
   position: absolute;
 }
 .header {
   background: #fff;
-  border-bottom:1px solid #eee;
   position: fixed;
   width: 100%;
   z-index: 2;
+  padding:12px 0;
 }
 .header .three {
   display: flex;
   padding:0 20px;
 }
-.header .menu {
-  border-left: 1px solid #eee;
+.header .menu a {
   padding:0 40px;
+  float: right;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.header .menu a:first-child {
+  color:#129461;
+  font-weight: 800;
+  line-height: 18px;
 }
 .menu a.toggle {
   margin:10px 10px 10px 0;
@@ -125,17 +149,14 @@ a.cta-link  {
 }
 .hero  {
 	position: relative;
-  background:url('../images/wall-street.png') no-repeat;
-  background-size: cover;
+  background:#fff;
   height: 100vh;
-  padding: 100px;
+  padding: 200px 120px;
+  text-align: center;
 }
-.hero:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: linear-gradient(45deg, rgba(9, 62, 41, 1), rgba(36, 187, 129, .3));
+.hero a {
+  font-size: 40px;
+  color:#1ca56c;
 }
 .how-it-works {
   padding: 100px;

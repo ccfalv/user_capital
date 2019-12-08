@@ -1,0 +1,57 @@
+.signup {
+  margin:0 auto;
+  padding: 140px 0;
+  width: 80%;
+  display: flex;
+  text-align: center;
+}
+.progress-meter {
+  display: flex;
+}
+.progress-meter li {
+  flex-grow:1;
+  list-style: none;
+  display: flex;
+}
+.progress-meter li span {
+  vertical-align: top;
+  line-height: 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.progress-meter .active span {
+  font-weight: 800;
+}
+.progress-meter li div {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  margin:0 10px auto auto;
+  line-height: 24px;
+  background: #e6e6e6;
+  text-align: center;
+}
+.progress-meter li div i {
+  font-size: 14px;
+}
+.progress-meter li.active div {
+  background:#129461;
+  color: #fff;
+}
+.price-meter .rangeslider {
+  box-shadow: none;
+  margin-bottom:40px;
+}
+.price-meter .rangeslider__fill {
+  background: #129461;
+  box-shadow: none;
+}
+.price-meter .rangeslider--horizontal {
+  height: 8px;
+}
+.price-meter .range-output {
+  font-size: 80px;
+  color:#000;
+}

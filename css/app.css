@@ -32,14 +32,14 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  font-size: 48px;
+  font-size: 40px;
   color:#fff;
-  font-family:ogg-bold, serif;
+  font-family: 'Michroma', sans-serif;
   margin-bottom:0;
 }
 h4 {
-  font-family:ogg-bold, serif;
-  color:#ececec;
+  font-family: 'Orbitron', sans-serif;
+  color:#23272A;
 }
 p {
   font-size: 2.5rem;
@@ -71,11 +71,10 @@ nav {
   position: absolute;
 }
 .header {
-  background: #fff;
-  border-bottom:1px solid #eee;
   position: fixed;
   width: 100%;
   z-index: 2;
+  display: none;
 }
 .header .three {
   display: flex;
@@ -244,7 +243,6 @@ a.cta-link  {
 }
 .log {
   background: #fff;
-  padding-top:42px;
 }
 .log h2 {
   color:rgba(0,0,0,.5);
@@ -266,32 +264,47 @@ a.cta-link  {
   display: inline-block;
 }
 .log .ledger {
-  min-height: 700px;
+  height: 100vh;
   margin-bottom:0px;
   position: relative;
   background: #fff;
   overflow: hidden;
-  border-left: 1px solid #6f727b;
+  display: flex;
+  flex-flow: row wrap;
+  border-left: 1px solid #929e9a;
 }
-.ledger section:nth-child(1) {
+.ledger .data-overview:nth-child(1) {
   max-height: 146px;
   height: 182px;
   border-bottom: 1px solid #ddd;
-  display: inline-flex;
+  flex-grow: 2;
   background: #23272A;
   width: 100%;
   padding: 42px 60px 0;
 }
-.ledger section:nth-child(1) div {
-  flex-grow: 1;
+.ledger .data-overview:nth-child(1) div {
+    display: inline-block;
+    width: 25%;
+    float: left;
  }
-.ledger section:nth-child(2) {
+ .data-container {
+  display: flex;
+  width: 100%;
+ }
+.data-container section:nth-child(1) {
   width: 70%;
   height: 100vh;
-  border-right: 1px solid #6f727b;
+  float: left;
+  border-right: 1px solid #929e9a;
 }
-.ledger section:nth-child(3) {
-  width: 30%;
+.data-container  section:nth-child(2) {
+  flex-grow: 2;
+}
+.data-container.inactive  section {
+  display: none;
+}
+.data-containter.inactive section:nth-child(1) {
+  width: 100%;
 }
 @media (max-width: 550px) {
   .log .ledger { 
@@ -364,11 +377,11 @@ a.cta-link  {
 }
 .campaign-avatar {
   position: relative;
-  height: 116px;
-  width: 116px;
+  height: 110px;
+  width: 110px;
   margin:0px auto;
   border-radius:50%;
-  padding:30px 0 5px;
+  padding:34px 0px;
 }
 .avatar {
   position: relative;
@@ -379,12 +392,11 @@ a.cta-link  {
   border-radius: 50%;
 }
 .avatar-placeholder {
-  background:url('../images/avatar-placeholder.png') no-repeat;
-  background-size:116px 116px;
-  height: 116px;
-  width: 116px;
+  background:url('../images/chase-avi.png') no-repeat;
+  background-size:110px 110px;
+  height: 110px;
+  width: 110px;
   border-radius: 50%;
-  margin-top: 4px;
 }
 .facebook-logo {
   background:url('../images/fb-logo.png') no-repeat;
@@ -914,7 +926,7 @@ transform: rotateX( -90deg ) translateZ(16px );
   display: block;
   position: absolute;
   background: rgba(255,255,255,0);
-  border:1px solid rgba(158, 199, 190, 0);
+  border:1px solid rgba(158, 199, 190, .2);
 }
 .large-token-square-3d .front  {
   transform: rotateY(   0deg ) translateZ(16px );
@@ -956,18 +968,22 @@ background
 }
 .account-menu [role=tab] {
   background:#eaeced;
-  border-top:1px solid #d1d2d3;
+  border-top:1px solid #929e9a;
   padding: 1.75em 2.2em;
 }
 .account-menu li {
   margin:0;
+  font-family: 'Michroma', sans-serif;
+}
+.account-menu li span {
+  font-size: 14px;
+  font-weight: 100;
 }
 .category-icon {
   background: url('../images/v2-cat-icons.png') no-repeat;
   background-size: 130px 40px;
   height:30px;
   width: 22px;
-  display: inline-block;
   float: left;
   margin:2px 10px 2px 0;
 }
@@ -1026,6 +1042,51 @@ background
 }
 .account-menu [role=tab] {
   color:#23272A;
+}
+.token-log {
+  overflow-y: scroll;
+  height: 600px;
+}
+.token-log ul li {
+  list-style: none;
+  display: flex;
+  padding: 4px 20px 4px 20px;
+  border-bottom:1px solid #eee;
+  font-size: 12px;
+  margin: 0;
+}
+.token-log ul li span {
+  font-size: 12px;
+  width: 25%;
+}
+.token-log ul li span:nth-child(2) {
+  width: 40%;
+  text-decoration: underline;
+}
+.token-log ul li span:nth-child(3) {
+  width: 35%;
+  text-align: right;
+  font-weight: 600;
+}
+.section-title {
+  display: block;
+  background: #eaeced;
+  font-size: 12px;
+  padding:4px 20px;
+}
+.section-title span {
+  float:right;
+  font-size: 12px;
+  margin-left: 30px;
+}
+.token-log ul li:nth-child(1) {
+  background: #eaeced;
+}
+.spending-data-tab.active span {
+  color:#14ca81;
+}
+.account-container {
+  padding: 30px;
 }
 
 

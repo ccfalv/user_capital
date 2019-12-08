@@ -39,6 +39,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Crete+Round|Major+Mono+Display|Roboto:700,300,100"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
 
   <!-- CSS
@@ -75,11 +76,7 @@
     <div class="container">
       <div class="row">
         <div class="columns three">
-          <div class="uu-logo">
-            <a href="/" style="text-decoration: none; color: black;"><strong>User</strong>Capital</a>
-          </div>
-          <div class="mobile-login-btn">
-            <nav role="navigation">
+          <nav role="navigation">
             <div id="menuToggle">
               <input type="checkbox">
               <span></span>
@@ -105,37 +102,12 @@
               </ul>
             </div>
           </nav>
-          </div>
         </div>
         <div class="menu columns nine">
+          <span>#BOYCOTT<strong>FACEBOOK</strong></span>
           <ul class="u-pull-right">
-            <li class="menu-btn">
-              <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <div class="menu-intro"></div>
-                    <p>We don’t need to delete Facebook, just like union workers don’t need to quit their jobs when management slashes benefits, lowers wages or cuts paid time off. They strike. Everybody just walks out. And eventually a deal is made. Why doesn’t that exist for the internet?</p>
-                    <p>That's why we built Users United. We think there is better path forward, where users have more power over the services they use.</p> 
-                    <p>Users United was built by <a href="#">Casey Falvey</a> and <a href="#">Swain Huang</a> as an <a href="#">Open Source</a> project that is not affiliated with Facebook in any way.</p>
-                    <!--<a href="#">
-                      <li>Home</li>
-                    </a>
-                    <a href="#">
-                      <li>About</li>
-                    </a>
-                    <a href="#">
-                      <li>Info</li>
-                    </a>
-                    <a href="#">
-                      <li>Contact</li>
-                    </a>-->
-                  </ul>
-                </div>
-              </nav>
+            <li class="menu-btn" id="loginBtn">
+              <a href="join"><span>Login</span><i class="fa fa-lock"></i></a>
             </li>
           </ul>
         </div>
@@ -149,6 +121,7 @@
           <div class="sidebar-content">
             <div class="sidebar-header">
               <div class="campaign-avatar">
+                <div class="avatar-placeholder" style="display:none;"></div>
                 <div class="account-graph">
                   <div class="large-token-square">
                     <div class="small-token-square-3d search-token-square active left-token-square">
@@ -251,47 +224,137 @@
             </div>
             <div class="account-menu">
               <ul data-tabs>
-                <li><a href="#spending-data-container"><div class="category-icon social-icon active"></div>Spending<span>0</span></a></li>
-                <li><a href="#search-data-container"><div class="category-icon search-icon"></div>Search<span>0</span></a></li>
-                <li><a href="#social-data-container"><div class="category-icon spending-icon"></div>Social<span>0</span>
+                <li><a data-tabby-default href="#spending-data-container" class="spending-data-tab active"><div class="category-icon spending-icon"></div>Spending<span>$7.30</span></a></li>
+                <li><a href="#social-data-container" class="social-data-tab active"><div class="category-icon social-icon"></div>Social<span>$0</span>
                 </a></li>
-                <li><a href="#location-data-container"><div class="category-icon location-icon"></div>Location<span>0</span></a></li>
-                <li><a href="#entertainment-data-container"><div class="category-icon device-icon"></div>Device<span>0</span></a></li>
-                <li><a href="#health-data-container"><div class="category-icon media-icon"></div>Media<span>0</span></a></li>
+                <li><a href="#search-data-container"><div class="category-icon search-icon"></div>Search<span>$0</span></a></li>
+                <li><a href="#location-data-container"><div class="category-icon location-icon"></div>Location<span>$0</span></a></li>
+                <li><a href="#entertainment-data-container"><div class="category-icon device-icon"></div>Device<span>$0</span></a></li>
+                <li><a href="#health-data-container"><div class="category-icon media-icon"></div>Media<span>$0</span></a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="columns nine ledger">
-          <section>
+          <div class="data-overview">
             <div>
-              <h3>0 </h3>
-              <span>Tokens Minted</span>
+              <h3>$7.30</h3>
+              <span>Total Data Value</DATA></span>
             </div>
             <div>
-              <h3>$0.00</h3>
-              <span>Token Price</span>
+              <h3>1.89</h3>
+              <span>Kilobytes Stored</span>
             </div>
             <div>
-              <h3>$0.00</h3>
-              <span>Market Cap</span>
+              <h3>$0.0024</h3>
+              <span>Price Per Byte</span>
             </div>
-            <div>
-              <h3>0</h3>
-              <span>Stakeholder(s)</span>
-            </div>
-          </section>
-          <section>
-            <canvas id="myChart"></canvas>
-            <div id="spending-data-container"> t</div>
-            <div id="search-data-container"> d</div>
-            <div id="social-data-container"> s</div>
-            <div id="location-data-container"> b</div>
-            <div id="entertainment-data-container">f</div>
-            <div id="health-data-container"> b</div>
-          </section>
-          <section>
-          </section>
+          </div>
+          <div id="spending-data-container" class="data-container">
+            <section>
+              <canvas id="myChart"></canvas>
+            </section>
+            <section class="token-log">
+              <ul>
+                <label class="section-title">Ledger<i class="fa fa-question-circle u-pull-right"></i></label>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/27</span>
+                  <span>423 Bytes</span>
+                  <span>$7.22</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/26</span>
+                  <span>983 Bytes</span>
+                  <span>$7.21</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/25</span>
+                  <span>183 Bytes</span>
+                  <span>$7.20</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/24</span>
+                  <span>343 Bytes</span>
+                  <span>$7.19</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/23</span>
+                  <span>1 transactions</span>
+                  <span>$7.18</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/22</span>
+                  <span>8 transactions</span>
+                  <span>$7.17</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/21</span>
+                  <span>2 transactions</span>
+                  <span>$7.16</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/20</span>
+                  <span>10 transactions</span>
+                  <span>$7.15</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/19</span>
+                  <span>8 transactions</span>
+                  <span>$7.14</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/18</span>
+                  <span>19 transactions</span>
+                  <span>$7.13</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/17</span>
+                  <span>3 transactions</span>
+                  <span>$7.12</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/16</span>
+                  <span>10 transactions</span>
+                  <span>$7.11</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/15</span>
+                  <span>4 transactions</span>
+                  <span>$7.10</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/14</span>
+                  <span>3 transactions</span>
+                  <span>$7.09</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/13</span>
+                  <span>18 transactions</span>
+                  <span>$7.08</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/12</span>
+                  <span>4 transactions</span>
+                  <span>$7.07</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/11</span>
+                  <span>3 transactions</span>
+                  <span>$7.06</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-cube"></i> 11/10</span>
+                  <span>8 transactions</span>
+                  <span>$7.05</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div id="search-data-container"> d</div>
+          <div id="social-data-container"> s</div>
+          <div id="location-data-container"> b</div>
+          <div id="entertainment-data-container">f</div>
+          <div id="health-data-container"> b</div>
         </div>
       </div>
     </div>
@@ -361,6 +424,50 @@
 var tabs = new Tabby('[data-tabs]');
  };
   </script>
+  <script>
+  var x_time  = ['11/19', '11/20', '11/21', '11/22', '11/23', '11/24','11/25', '11/26', '11/27', '11/28', '11/29', '02:30','00:00', '00:30', '01:00', '01:30', '02:00', '02:30','01:00', '01:30', '02:00', '02:30',];
+  var y_data1 = ['.30', '.60', '.90', '1.20', '1.50', '1.80','2.10', '2.40', '2.70', '3.00', '3.30', '3.60','3.90', '4.20', '4.50', '4.80', '5.10', '5.40', '5.70', '6.00', '6.30', '6.60', '6.90', '7.20'];
+  var y_data2 = ['100', '41', '53', '46', '70', '60','56', '41', '53', '46', '70', '60','56', '41', '53', '46', '70', '60','53', '46', '70', '60'];
+  new Chart(document.getElementById('myChart').getContext('2d'), {
+    type: 'bar',  // <-- define overall chart type
+    data: {
+      labels: x_time,
+      datasets: [{
+        type:'line',
+        label: 'Data1',
+        fill:false,
+        backgroundColor: 'rgb(255, 255, 255)',
+        borderColor: 'rgb(36, 187, 119)',
+        data: y_data1,
+        yAxisID: 'left-axis'
+      }, {
+        label: 'Data2',
+        fill: true,
+        backgroundColor: 'rgba(0, 0, 0,.1)',
+        data: y_data2,
+      }]
+    },
+    options: {
+      legend: {position:'bottom', usePointStyle:true},
+      responsive: true,
+      title: {display: false},
+      tooltips: {mode: 'index', intersect: false},
+      hover: {mode: 'nearest', intersect: true},
+      scales: {
+        yAxes: [{
+          id:'left-axis',
+          display: true,
+          position: 'left',
+        },{
+          id:'right-axis',
+          display: true,
+          position: 'right',
+          gridLines: {drawOnChartArea:false}
+        }]
+      }
+    }
+  });
+</script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

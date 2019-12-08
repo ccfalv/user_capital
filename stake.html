@@ -47,10 +47,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/signup.css">
   <link rel="stylesheet" href="css/fa.min.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css">
 
 
   <!-- JS
@@ -70,29 +72,67 @@
   <div class="container">
     <div class="row">
       <div class="columns three">
-        <div class="logo">user.capital / <a href="#">spending</a></div>
+        <div class="logo">user.capital</div>
       </div> 
-      <div class="columns six menu u-pull-right">
-        <a href="#">Start now</a>
-        <a href="#">Login</a>
-        <a href="#">FAQs</a>
-        <a href="#">How it works</a>
+      <div class="columns six">
+        <ul class="progress-meter">
+          <li>
+            <div>
+              1
+            </div>
+            <span>Connect</span>
+          </li>
+          <li class="active">
+            <div>
+              2
+            </div>
+            <span>Stake</span>
+          </li>
+          <li>
+            <div>
+              3
+            </div>
+            <span>Exchange</span>
+          </li>
+        </ul>
+      </div>
+      <div class="columns one menu u-pull-right">
+        <a href="#">Logout</a>
       </div>
     </div>
   </div>
 </div>
-<div class="hero">
+<div class="signup">
   <div class="container">
     <div class="row">
-      <div class="columns twelve">
-        <h1>Turn your personal data<br> into personal currency.</h1>
-        <a href="#">Why aren't you?</a>
+      <div class="columns six offset-by-three price-meter">
+        <input
+          type="range"
+          min="1"                    // default 0
+          max="20"                  // default 100
+          step="0.1"                   // default 1
+          value="7.3"                 // default min + (max-min)/2
+>      
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+      <button>Stake Your Capital</button>
       </div>
     </div>
   </div>
 </div>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+<script>
+  $('input[type="range"]').rangeslider({
+    polyfill : false,
+    onInit : function() {
+        this.output = $('<div class="range-output" />' ).insertBefore(this.$range ).html( this.$element.val() );
+    },
+    onSlide : function( position, value ) {
+        this.output.html( value );
+    }
+});
+</script>
 </body>
 
 </html>
