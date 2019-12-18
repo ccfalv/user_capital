@@ -64,9 +64,6 @@ button.sidebar-btn {
   font-size:16px;
   }
 }
-.logo {
-  background: #eee;
-}
 nav {
   position: absolute;
 }
@@ -74,7 +71,8 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 2;
-  display: none;
+  background:#fff;
+  border-bottom: 1px solid #eee;
 }
 .header .three {
   display: flex;
@@ -168,6 +166,7 @@ a.cta-link  {
   width: inherit;
   background:#eaeced;
   height: 100vh;
+  background:#fff;
 }
 .sidebar-content strong {
   color:#1877F2;
@@ -205,7 +204,7 @@ a.cta-link  {
   color:#000;
 }
 .sidebar-menu [role=tab][aria-selected=true] {
-    background: #0a0c0f;
+    background: #FFF;
     color: #fff;
 }
 .sidebar-menu [role=tab] {
@@ -243,6 +242,7 @@ a.cta-link  {
 }
 .log {
   background: #fff;
+  padding-top:44px;
 }
 .log h2 {
   color:rgba(0,0,0,.5);
@@ -967,9 +967,13 @@ transform: rotateX( -90deg ) translateZ(50px );
 background
 }
 .account-menu [role=tab] {
-  background:#eaeced;
+  background:#ebeced;
   border-top:1px solid #929e9a;
   padding: 1.75em 2.2em;
+}
+.account-menu li a i {
+  width: 26px;
+  text-align:left;
 }
 .account-menu li {
   margin:0;
@@ -1088,5 +1092,40 @@ background
 .account-container {
   padding: 30px;
 }
+.size-square {
+  height: 12px;
+  width: 12px;
+  background:#000;
+  display: inline-block;
+}
+.account-circle {
+  height: 12px;
+  width: 12px;
+  background:#000;
+  display: inline-block;
+  border-radius: 50%;
+}
+.price-square span {
+  line-height: 20px;
+  text-align: center;
+  color:white;
 
+}
+.price-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7px 12.1px 7px;
+  border-color: transparent transparent #000 transparent;
+  display:inline-block;
+}
+.account-icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  float: right;
+}
+.account-icon.inactive {
+  background: #ffff;
+}
 

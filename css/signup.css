@@ -1,9 +1,15 @@
 .signup {
   margin:0 auto;
-  padding: 140px 0;
+  padding: 60px 0;
   width: 80%;
   display: flex;
   text-align: center;
+}
+.signup h4 {
+  color:#000;
+  margin-bottom: 40px;
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
 .progress-meter {
   display: flex;
@@ -28,30 +34,166 @@
   width: 24px;
   border-radius: 50%;
   font-size: 12px;
-  margin:0 10px auto auto;
+  margin:0 10px auto 100px;
   line-height: 24px;
-  background: #e6e6e6;
+  background: #fff;
   text-align: center;
+  color:#c4cbdd;
+  border:1px solid #c4cbdd;
 }
 .progress-meter li div i {
   font-size: 14px;
 }
 .progress-meter li.active div {
-  background:#129461;
+  background:#000;
   color: #fff;
 }
 .price-meter .rangeslider {
   box-shadow: none;
   margin-bottom:40px;
+  background:#c4cbdd;
 }
 .price-meter .rangeslider__fill {
-  background: #129461;
+  background:#31b974;
   box-shadow: none;
 }
 .price-meter .rangeslider--horizontal {
-  height: 8px;
+  height: 4px;
+  width: 100%;
+  margin:0 20px 0 0;
 }
 .price-meter .range-output {
-  font-size: 80px;
+  font-size: 40px;
+  margin-top:-10px;
   color:#000;
+}
+.connect-columns {
+  padding:0 20%;
+}
+.connect-columns p {
+  font-size: 2rem;
+}
+.connect-columns ul {
+  display: flex;
+}
+.connect-columns ul li {
+  flex-grow: 1;
+  list-style: none;
+  padding:20px 0;
+}
+.connect-columns h3 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.connect-columns ul li i {
+  font-size: 18px;
+  display: block;
+  margin:0 0 10px;
+  color:#000;
+}
+.step-avatar {
+  border-radius: 50%;
+  width: 64px;
+  height:64px;
+  display: inline-block;
+  margin:0 20px 0px;
+  vertical-align: top;
+}
+.step-avatar  .account-avatar {
+    margin: 0 auto;
+    height: 64px;
+    width:64px;
+    line-height: 64px;
+    font-size: 24px;
+    background: #117ACA;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+.step-avatar .account-avatar.stake-avatar {
+  background:#000;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+}
+.connect-avatar {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border:1px solid #000;
+  margin: 30px auto;
+  font-size: 30px;
+  line-height: 75px;
+}
+.coin-avatar  div i {
+  text-shadow: -1px -1px rgba(0,0,0,.7);
+}
+.coin-logo {
+  background:url('../images/coin-logo.png') no-repeat;
+  background-size: 14px 20px;
+  width: 14px;
+  height:20px;
+  display: inline-flex;
+}
+.divider {
+  height: 1px;
+  background: #eee;
+  width: 80%;
+}
+
+.price-meter .rangeslider--horizontal .rangeslider__handle {
+  height: 8px;
+  width:8px;
+  background: #000;
+  top: -6px;
+  border: 4px solid #000;
+  box-shadow: none;
+}
+.price-meter .rangeslider--horizontal .rangeslider__handle:after {
+  height: 8px;
+  width: 8px;
+}
+.step-container {
+  display: flex;
+  text-align: left;
+  padding:20px 10px;
+}
+.step-container section {
+  width: 80%
+}
+.step-container section:nth-child(2) {
+  width: 20%;
+}
+.step-container button {
+  margin-top:10px;
+}
+.step-container aside {
+  display: inline-block;
+  width: 55%;
+}
+.stake-square {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background:#000;
+  margin:0 auto;
+}
+.connect-columns label {
+  text-align: left;
+  padding:2px 30px;
+  background:#eee;
+}
+.step-info {
+  padding: 20px 30px;
+  text-align: left;
+}
+.activate-avatar {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 32.5px 56.3px 32.5px;
+  border-color: transparent transparent #c4cbdd transparent;
 }
