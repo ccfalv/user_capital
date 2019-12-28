@@ -26,15 +26,19 @@ p {
   font-weight: 300;
 }
 button {
-  background: #31b974;
+  background: #000;
   border-radius: 6px;
   font-size: 12px;
   color:#fff;
 }
 button.secondary-btn {
   background:none;
-  border:2px solid #c4cbdd;
+  border:2px solid #ebeced;
+  background:#ebeced;
   color:#000;
+}
+button.secondary-btn.inactive {
+  background: none;
 }
 button.inactive-btn {
   background:#c4cbdd; 
@@ -74,15 +78,14 @@ nav {
   position: absolute;
 }
 .header {
-  background: #fff;
+  background:none;
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding:12px 0;
+  padding:12px 60px;
 }
 .header .three {
   display: flex;
-  padding:0 20px;
 }
 .header .menu a {
   padding:0 40px;
@@ -94,7 +97,6 @@ nav {
 }
 .header .menu a:first-child {
   color:#000;
-  font-weight: 800;
   line-height: 18px;
 }
 .menu a.toggle {
@@ -154,12 +156,16 @@ a.cta-link  {
 	position: relative;
   background:#fff;
   height: 100vh;
-  padding: 200px 120px;
-  text-align: center;
+  width: 100%;
+  padding: 180px 60px;
 }
 .hero a {
-  font-size: 40px;
-  color:#1ca56c;
+  color:#000;
+}
+.hero .em {
+  height: .9em;
+  width:1em;
+  margin-top:-10px;
 }
 .how-it-works {
   padding: 100px;
@@ -590,5 +596,19 @@ margin-top:10px;
 }
 #menu p a {
   color:#1877F2;
+}
+.app-screenshot {
+  background:url('../images/app-screenshot.png') no-repeat;
+  background-size: 885px 600px;
+  width:885px;
+  height:600px;
+  z-index: 0;
+  margin-left:90px;
+  margin-top: -100px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: -10px -10px 30px #eee, 10px 10px 30px #eee;
+}
+.hero .secondary-btn {
+  margin-left: 20px;
 }
 
