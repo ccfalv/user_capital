@@ -613,8 +613,9 @@ margin-top:10px;
 }
 .hero input {
   border-radius: 10px 0 0 10px;
-  border-color:#ebeced;
+  border-color:#575e69;
   color: #000;
+  height: 44px;
 }
 form button {
   border-radius:0 10px 10px 0;
