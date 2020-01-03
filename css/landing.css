@@ -13,6 +13,7 @@
 
 body {
   overflow-x: hidden;
+  height: auto;
 }
 
 h1 {
@@ -157,7 +158,7 @@ a.cta-link  {
   background:#fff;
   height: 100vh;
   width: 100%;
-  padding: 180px 60px;
+  padding: 180px 60px 40px;
 }
 .hero a {
   color:#000;
@@ -661,4 +662,22 @@ form button {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+.footer {
+  text-align: center;
+  padding: 20px; 
+}
+.footer a {
+  color:#000;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer a i {
+  margin:0 6px;
+}
+.footer span {
+  display: block;
+  color:#575e69;
+  margin-top: 20px;
+}
+
 
