@@ -199,7 +199,7 @@
             </div>
             <div class="account-menu">
               <ul data-tabs>
-                <li class="active"><a href="#all-data-container" class="spending-data-tab"><div class="account-icon"><i class="fa fa-credit-card"></i></div>Spending</a></li>
+                <li class="active dashboard-tab"><a data-tabby-default href="#all-data-container" class="all-data-tab"><div class="account-icon"><i class="fa fa-credit-card"></i></div></a></li>
                 <li class="active"><a href="#spending-data-container" class="spending-data-tab"><div class="account-icon"><i class="fa fa-credit-card"></i></div>Spending</a></li>
                 <li class="active"><a href="#search-data-container" class="search-data-tab"><div class="account-icon inactive"><i class="fa fa-mouse-pointer"></i></div> Search</a></li>
                 <li class="active"><a href="#social-data-container" class="social-data-tab active"><div class="account-icon inactive"><i class="fa fa-comments"></i></div> Social</a></li>
@@ -482,7 +482,11 @@ var tabs = new Tabby('[data-tabs]');
   options: {
     legend: {
       display:false
-    }
+    },
+    yAxes: [{
+ position: 'right',
+ scalePositionRight: true
+}]
   }
 });
 </script>

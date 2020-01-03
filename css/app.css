@@ -991,6 +991,10 @@ background
   background:#ebeced;
   border-top:1px solid #929e9a;
   padding: 1.75em 1.5em;
+  outline: 0;
+}
+.account-menu .dashboard-tab {
+  display: none;
 }
 .account-menu li {
   margin:0;
@@ -1103,6 +1107,7 @@ background
 .spending-data-tab.active span {
   color:#14ca81;
 }
+
 .account-container {
   padding: 30px;
 }
