@@ -989,12 +989,12 @@ background
 }
 .account-menu [role=tab] {
   background:#ebeced;
-  border-top:1px solid #929e9a;
+  border-top:1px solid #ccc;
   padding: 1.75em 1.5em;
   outline: 0;
 }
-.account-menu .dashboard-tab {
-  display: none;
+.account-menu [role=tab]:hover:not([aria-selected=true]) { 
+  background: #f1f1f1;
 }
 .account-menu li {
   margin:0;
@@ -1107,7 +1107,6 @@ background
 .spending-data-tab.active span {
   color:#14ca81;
 }
-
 .account-container {
   padding: 30px;
 }
@@ -1219,6 +1218,9 @@ background
 .time-toggles li.active a {
   border-color: #000;
   color:#000;
+}
+.hide {
+  display: none;
 }
 
 
