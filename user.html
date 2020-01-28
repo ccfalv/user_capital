@@ -199,7 +199,7 @@
             </div>
             <div class="account-menu">
               <ul data-tabs>
-                <li class="active hide"><a href="#all-data-container" class="spending-data-tab"><div class="account-icon"><i class="fa fa-credit-card"></i></div>Spending</a></li>
+                <li class="active"><a data-tabby-default href="#all-data-container" class="all-data-tab"><div class="account-icon"><i class="fa fa-asterisk"></i></div>User Capital</a></li>
                 <li class="active"><a href="#spending-data-container" class="spending-data-tab"><div class="account-icon"><i class="fa fa-credit-card"></i></div>Spending</a></li>
                 <li class="active"><a href="#search-data-container" class="search-data-tab"><div class="account-icon inactive"><i class="fa fa-mouse-pointer"></i></div> Search</a></li>
                 <li class="active"><a href="#social-data-container" class="social-data-tab active"><div class="account-icon inactive"><i class="fa fa-comments"></i></div> Social</a></li>
@@ -365,7 +365,35 @@
             </section>
           </div>
           <div id="spending-data-container" class="data-container">
-            this
+            <section class="connect-data-container">
+              <div class="account-tile">
+                this
+              </div>
+              <div class="account-tile">
+                this
+              </div>
+            </section>
+            <section class="token-log">
+              <ul class="dashboard-stats data-stats">
+                 <li class="earned-metric">
+                  <h3>$85.33</h3>
+                  <span>Spending Capital Value</span>
+                </li>
+                <li class="staked-metric">
+                  <h4>0.80 KB</h4>
+                  <div class="account-circle"></div><span>Claimed</span>
+                </li>
+                <li class="staked-metric">
+                  <h4>$3.40</h4>
+                  <div class="size-square"></div><span>Staked</span>
+                </li>
+                <li class="staked-metric">
+                  <h4>$73.12</h4>
+                  <div class="price-triangle"></div><span>Earned</span>
+                </li>
+              </ul>
+              <canvas id="line-chart-spending" width="200" height="150"></canvas>
+            </section>
           </div>
           <div id="search-data-container"> d</div>
           <div id="social-data-container"> s</div>
@@ -475,6 +503,30 @@ var tabs = new Tabby('[data-tabs]');
         data: [.01,.01,.015,.025,.03,.04,.5,.6,.7,.8,1.1,2,2.5],
         label: "North America",
         borderColor: "#ff9800",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      display:false
+    },
+    yAxes: [{
+ position: 'right',
+ scalePositionRight: true
+}]
+  }
+});
+</script>
+<script>
+  new Chart(document.getElementById("line-chart-spending"), {
+  type: 'line',
+  data: {
+    labels: ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    datasets: [{ 
+        data: [1,1.1,1.2,1.3,1.5,1.8,2.2,2.7,3.8,7,10,15,16,20],
+        label: "Spending",
+        borderColor: "#4caf50",
         fill: false
       }
     ]

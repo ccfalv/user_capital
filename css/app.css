@@ -77,6 +77,7 @@ nav {
   z-index: 2;
   background:#fff;
   border-bottom: 1px solid #eee;
+  display: none;
 }
 .header .three {
   display: flex;
@@ -263,7 +264,6 @@ a.cta-link  {
 }
 .log {
   background: #fff;
-  padding-top:44px;
 }
 .log h2 {
   color:rgba(0,0,0,.5);
@@ -1155,6 +1155,9 @@ background
 .account-menu ul li a:hover .account-icon, .account-menu ul li.active .account-icon {
   color:#fff;
 }
+.account-menu ul li .all-data-tab:hover .account-icon, .account-menu ul li.active .all-data-tab .account-icon {
+  background:#000;
+}
 .account-menu ul li .spending-data-tab:hover .account-icon, .account-menu ul li.active .spending-data-tab .account-icon {
   background:#4caf50;
 }
@@ -1189,7 +1192,6 @@ background
 }
 .dashboard-stats li {
   flex-grow: 1;
-  font-size: 
 }
 .dashboard-stats li:nth-child(n+2) {
   margin-top: 10px;
@@ -1222,8 +1224,15 @@ background
 .hide {
   display: none;
 }
-
-
+.dashboard-stats.data-stats {
+  display: block;
+}
+.connect-data-container {
+  display: flex;
+}
+.connect-data-container .account-tile {
+  flex-grow: 1;
+}
 
 
 
