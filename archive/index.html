@@ -1,450 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-13245165-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-13245165-2');
+  </script>
+
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>USER CAPITAL</title>
-  <meta name="description" content="User Capital">
+  <title>User Capital</title>
+  <meta name="description" content="Users United">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- TWITTER CARD
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://usersunited.org">
+  <meta name="twitter:creator" content="@usersunitedhq">
+  <meta name="twitter:title" content="Join the Facebook Boycott">
+  <meta name="twitter:description"
+    content="Stop getting pawned for your personal data. Demand Facebook give you your fair share by joining the #FacebookBoycott. We're stronger, together.">
+  <meta name="twitter:image" content="https://usersunited.org/images/zuck-with-copy.png">
+
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<link href="https://fonts.googleapis.com/css?family=Crete+Round|Major+Mono+Display|Roboto:700,300,100" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Major+Mono+Display|Roboto:700,300,100"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="css/fa.min.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/all.min.css">
 
 
-    <!-- JS
+  <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="hero container">
-    <div class="row main-menu">
-      <div class="ten columns">
-        <div class="logo-container">
-          <div class="logo"></div><span>User Capital</span>
-        </div>
-      </div>
-      <div class="two columns">
-        <a href="#"><span class="u-pull-right token-price"><i class="fas fa-asterisk"></i>
- $0.00</span></a>
+<div class="header" style="display:none;">
+  <div class="container">
+    <div class="row">
+      <div class="columns three">
+        <div class="logo">uc</div>
+      </div> 
+      <div class="columns eight menu">
+        <ul class="u-pull-right">
+          <li>
+             <button class="secondary-btn inactive">Log In</button>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="row hero-content">
-    <div class="columns eight">
-    <h1>Claim your capital</h1>
-      <h4>Turn your personal data into personal income. No data brokers, 100% anonymous, no surviellence capitalism.</h4>
-      <form name="contact" method="POST" data-netlify="true" action="success.html">
+  </div>
+</div>
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="columns four">
+        <h1>Claim your capital</h1>
+        <p></p>
+        <form name="contact" method="POST" data-netlify="true" action="success.html">
         <div class="placeholder-group">
-            <input type="email" name="email"/>
-            <div class="placeholder">
-            Email Address<span><i class="fas fa-asterisk"></i></span>
-            </div>
-            <button data-netlify-identity-button type="submit">claim</button>
+            <input type="email" name="email" placeholder="email address" />
+            <button data-netlify-identity-button type="submit">Join Waitlist</button>
         </div>
       </form>
-    </div>
-    <div class="capital-scene">
-    <div class="capital-scene-container">
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-      </div>   
-    </div>
-    <div class="capital-scene-container">
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-        <div class="capital-row">
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-facebook-f"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-            <div class="small-token-square-3d">
-              <figure class="front"></figure>
-              <figure class="back"></figure>
-              <figure class="right"></figure>
-              <figure class="left"></figure>
-              <figure class="top"><i class="fab fa-linkedin"></i></figure>
-              <figure class="bottom"></figure>
-            </div>
-        </div>
-      </div>   
+      </div>
+      <div class="columns eight">
+        <div class="network-screenshot load-animate"></div>
+      </div>
     </div>
   </div>
+</div>
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="columns eight">
+        <div class="app-screenshot load-animate"></div>
+      </div>
+      <div class="columns four">
+        <h1>Claim your capital</h1>
+        <p></p>
+        <form name="contact" method="POST" data-netlify="true" action="success.html">
+        <div class="placeholder-group">
+            <input type="email" name="email" placeholder="email address" />
+            <button data-netlify-identity-button type="submit">Join Waitlist</button>
+        </div>
+      </form>
+      </div>
+    </div>
   </div>
-  <div class="container mission">
-  </div>
+</div>
+<div class="footer">
+  <a href="mailto:contact@user.capital"><i class="far fa-envelope"></i>Inquiries</a>
+  <a href="https://twitter.com/usercapital"><i class="fab fa-twitter-square"></i>Updates</a>
+  <a href="#"><i class="fab fa-instagram"></i>Propoganda</a>
+  <span>&copy; Copyright 2020</span>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!---------------->
+
 </body>
 </html>

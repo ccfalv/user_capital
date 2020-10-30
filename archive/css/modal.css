@@ -10,15 +10,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10001;
 }
 
 .modal__container {
   background-color: #fff;
-  max-width: 500px;
+  max-width:480px;
   max-height: 100vh;
   border-radius: 4px;
   overflow-y: auto;
@@ -26,43 +27,50 @@
 }
 
 .modal__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+  background:url('../images/zuck.png') no-repeat;
+  background-size: cover;
+  padding:30px 50px;
 }
 .modal__title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #00449e;
+  font-size:6rem;
+  line-height: 6rem;
+  color: #fff;
   box-sizing: border-box;
 }
 
 .modal__close {
   background: transparent;
   border: 0;
+  position: absolute;
+  top:0;
+  right: 0;
 }
 
 .modal__header .modal__close:before { content: "\2715"; }
 
 .modal__content {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  color: rgba(0,0,0,.8);
+  padding:10px 40px
 }
-
+.modal__content p {
+  color:#000;
+  margin:14px 0 0;
+  font-size:20px;
+}
 .modal__btn {
   font-size: .875rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  background-color: #e6e6e6;
+  background-color: #353AC7;
   color: rgba(0,0,0,.8);
-  border-radius: .25rem;
   border-style: none;
   border-width: 0;
   cursor: pointer;
@@ -88,8 +96,9 @@
 }
 
 .modal__btn-primary {
-  background-color: #00449e;
+  background-color: #353AC7;
   color: #fff;
+  margin:0 auto;
 }
 
 
@@ -145,27 +154,11 @@
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
-/**************************\
-  Specific Modal Styles
-\**************************/
-
-#spending-modal .modal__header {
-  background:#2FDFBE;
-}
-#social-modal .modal__header {
-  background:#19B3DD;
-}
-#search-modal .modal__header {
-  background:#597DE8;
-}
-#fitness-modal .modal__header {
-  background:#BF4DBB;
-}
-#device-modal .modal__header {
-  background:#EA577F;
-}
-#travel-modal .modal__header {
-  background:#ED9C46;
+.modal__footer button {
+  margin: 0;
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
 

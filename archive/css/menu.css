@@ -2,7 +2,7 @@
 {
   display: inline-block;
   position: relative;
-  top: 6px;
+  top: 15px;
   right: 0px;
   
   z-index: 1;
@@ -96,22 +96,22 @@
 #menu
 {
   position: absolute;
-  width: 300px;
-  min-height: 390px;
-  margin: 8px 50px 0 0px;
-  padding: 50px;
-  padding-top: 125px;
+  width: 240px;
+  height: 100vh;
+  margin: 14px 0px 0 0px;
+  padding: 40px;
+  text-align: center;
   
-  background: #c3eaff;
+  background: #0a0c0f;
   overflow: hidden;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  transform: translate(20%, 0);
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
@@ -125,7 +125,7 @@
  */
 #menuToggle input:checked ~ ul
 {
-  transform:translate(-70%, 0);
+  transform:translate(-7%, 0);
 }
 
 .main-menu a:hover,
