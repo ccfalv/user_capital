@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="244px" height="244px" viewBox="0 0 244 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Artboard Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="40.6057889%" x2="50%" y2="93.5899078%" id="linearGradient-1">
+            <stop stop-color="#19202D" offset="0%"></stop>
+            <stop stop-color="#1D2532" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="40.6057889%" x2="50%" y2="93.5899078%" id="linearGradient-2">
+            <stop stop-color="#19202D" offset="0%"></stop>
+            <stop stop-color="#1D2532" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(61.000000, 122.000000) rotate(-270.000000) translate(-61.000000, -122.000000) " points="61 61 183 183 -61 183"></polygon>
+        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(183.000000, 122.000000) scale(1, -1) rotate(270.000000) translate(-183.000000, -122.000000) " points="183 61 305 183 61 183"></polygon>
+        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(122.000000, 183.000000) rotate(-360.000000) translate(-122.000000, -183.000000) " points="122 122 244 244 0 244"></polygon>
+        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(122.000000, 61.000000) scale(-1, -1) rotate(-360.000000) translate(-122.000000, -61.000000) " points="122 0 244 122 -1.59161573e-12 122"></polygon>
+        <circle id="Oval" fill="url(#linearGradient-2)" cx="122" cy="122" r="49"></circle>
+        <path d="M85.6872663,159.2208 C76.0090245,149.777221 70,136.590352 70,122 C70,107.452187 75.9740363,94.2996852 85.6027074,84.8618955 L10.25,8.5 L85.6027074,84.8618955 C94.9819759,75.6685643 107.829006,70 122,70 C136.382777,70 149.401721,75.8392614 158.815476,85.2764275 L234.25,9 L158.815476,85.2764275 C168.198634,94.6829211 174,107.66397 174,122 C174,136.419808 168.130631,149.468751 158.650608,158.888116 L234.25,235.5 L158.650608,158.888116 C149.250008,168.228566 136.298999,174 122,174 C107.871545,174 95.0591173,168.365417 85.6872663,159.2208 L10.25,235.5 L85.6872663,159.2208 Z" id="Combined-Shape" stroke="#C5D9FF" stroke-width="10" stroke-linecap="square"></path>
+        <rect id="Rectangle" stroke-opacity="0.7" stroke="#C5D9FF" stroke-width="10" transform="translate(122.000000, 122.000000) rotate(-270.000000) translate(-122.000000, -122.000000) " x="5" y="5" width="234" height="234"></rect>
+    </g>
+</svg>
